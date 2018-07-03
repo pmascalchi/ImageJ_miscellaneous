@@ -1,0 +1,4017 @@
+<?xml version="1.0" encoding="Windows-1252" ?>
+<NotepadPlus>
+	<AutoComplete language="ImageJ macro">
+		<Environment ignoreCase="no" startFunc="(" stopFunc=")" paramSeparator="," terminal=";" />
+		<KeyWord name="abs" func="yes">
+			<Overload retVal="" descr="Returns the absolute value of <i>n</i>.">
+				<Param name="n" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="acos" func="yes">
+			<Overload retVal="" descr="Returns the inverse cosine (in radians) of <i>n</i>.">
+				<Param name="n" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Array.concat" func="yes">
+			<Overload retVal="" descr="Returns a new array created by joining two or more arrays or values
+(<a href=&quot;../../macros/examples/ArrayConcatExamples.txt&quot;>examples</a>).">
+				<Param name="array1" />
+				<Param name="array2" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Array.copy" func="yes">
+			<Overload retVal="" descr="Returns a copy of <i>array</i>.">
+				<Param name="array" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Array.fill" func="yes">
+			<Overload retVal="" descr="Assigns the specified numeric value to each element of <i>array</i>.">
+				<Param name="array" />
+				<Param name="value" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Array.findMaxima" func="yes">
+			<Overload retVal="" descr="Returns an array holding the peak positions
+(sorted with descending strength). 'Tolerance' is the minimum amplitude difference
+needed to separate two peaks. With v1.51n and later, there is an optional
+'edgeMode' argument: 0=include edges, 1=exclude edges(default), 2=circular array.
+<a href=&quot;../../macros/examples/FindMaxima1D.txt&quot;>Examples</a>.<br>">
+				<Param name="array" />
+				<Param name="tolerance" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Array.findMinima" func="yes">
+			<Overload retVal="" descr="Returns an array holding the minima positions.">
+				<Param name="array" />
+				<Param name="tolerance" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Array.fourier" func="yes">
+			<Overload retVal="" descr="Calculates and returns the Fourier amplitudes of <i>array</i>.
+<i>WindowType</i> can be &quot;none&quot;, &quot;Hamming&quot;, &quot;Hann&quot;,
+or &quot;flat-top&quot;, or may be omitted (meaning &quot;none&quot;).
+See the <a href=&quot;../../macros/examples/TestArrayFourier.txt&quot;>TestArrayFourier</a>
+macro for an example and more documentation.
+Requires 1.49i.">
+				<Param name="array" />
+				<Param name="windowType" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Array.getSequence" func="yes">
+			<Overload retVal="" descr="Returns an array containing the numeric sequence 0,1,2...n-1.
+Requires 1.49u.">
+				<Param name="n" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Array.getStatistics" func="yes">
+			<Overload retVal="" descr="Returns the <i>min</i>, <i>max</i>, <i>mean</i>, and <i>stdDev</i> of <i>array</i>,
+which must contain all numbers.">
+				<Param name="array" />
+				<Param name="min" />
+				<Param name="max" />
+				<Param name="mean" />
+				<Param name="stdDev" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Array.print" func="yes">
+			<Overload retVal="" descr="Prints the array on a single line.">
+				<Param name="array" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Array.rankPositions" func="yes">
+			<Overload retVal="" descr="Returns, as an array, the rank position indexes of <i>array</i>, starting with the index of the smallest value
+(<a href=&quot;../../macros/examples/ArraySortingDemo.txt&quot;>example</a>).">
+				<Param name="array" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Array.resample" func="yes">
+			<Overload retVal="" descr="Returns an array which is linearly resampled to a different length.">
+				<Param name="array" />
+				<Param name="len" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Array.reverse" func="yes">
+			<Overload retVal="" descr="Reverses (inverts) the order of the elements in <i>array</i>.">
+				<Param name="array" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Array.show" func="yes">
+			<Overload retVal="" descr="Displays the contents of <i>array</i> in a window.">
+				<Param name="array" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Array.show" func="yes">
+			<Overload retVal="" descr="Displays one or more arrays in a Results window
+(<a href=&quot;../../macros/examples/ShowArrayDemo.txt&quot;>examples</a>).
+If <i>title</i> (optional) is &quot;Results&quot;, the window will be the active Results
+window, otherwise, it will be a dormant Results window
+(see also <a href=&quot;#IJ.renameResults&quot;>IJ.renameResults</a>).
+If <i>title</i> ends with &quot;(indexes)&quot;, a 0-based Index column is shown.
+If <i>title</i> ends with &quot;(row numbers)&quot;, the row number column is shown.">
+				<Param name="&quot;title&quot;" />
+				<Param name="array1" />
+				<Param name="array2" />
+				<Param name="..." />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Array.slice" func="yes">
+			<Overload retVal="" descr="Extracts a part of an array and returns it.
+(<a href=&quot;../../macros/examples/ArraySliceExamples.txt&quot;>examples</a>).">
+				<Param name="array" />
+				<Param name="start" />
+				<Param name="end" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Array.sort" func="yes">
+			<Overload retVal="" descr="Sorts <i>array</i>, which must contain all numbers or all strings.
+String sorts are case-insensitive in v1.44i or later.">
+				<Param name="array" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Array.trim" func="yes">
+			<Overload retVal="" descr="Returns an array that contains the first <i>n</i> elements of <i>array</i>.">
+				<Param name="array" />
+				<Param name="n" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Array.rotate" func="yes">
+			<Overload retVal="" descr="Rotates the array elements by 'd' steps (positive 'd' = rotate right). Requires 1.51n.
+<a href=&quot;../../macros/examples/RotateArray.txt&quot;>Examples</a>.">
+				<Param name="array" />
+				<Param name="d" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Array.getVertexAngles" func="yes">
+			<Overload retVal="" descr="From a closed contour given by 'xArr', 'yArr', an array is returned holding vertex angles in degrees (straight=0, convex = positive if contour is clockwise). Set 'arm'=1 to calculate the angle from the closest vertex points left and right, or use arm&gt;1 for more distant neighbours and smoother results.
+Requires 1.51n.
+<a href=&quot;../../macros/examples/VertexAngles.txt&quot;>Examples</a>.<br>">
+				<Param name="xArr" />
+				<Param name="yArr" />
+				<Param name="arm" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="asin" func="yes">
+			<Overload retVal="" descr="Returns the inverse sine (in radians) of <i>n</i>.
+">
+				<Param name="n" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="atan" func="yes">
+			<Overload retVal="" descr="Calculates the inverse tangent (arctangent) of <i>n</i>. Returns 
+a value in the range -PI/2 through PI/2.">
+				<Param name="n" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="atan2" func="yes">
+			<Overload retVal="" descr="Calculates the inverse tangent of <i>y/x</i> and returns an angle in the 
+range -PI to PI, using the signs of the arguments 
+to determine the quadrant. Multiply the result by 180/PI to convert to degrees.">
+				<Param name="y" />
+				<Param name="x" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="autoUpdate" func="yes">
+			<Overload retVal="" descr="If <i>boolean</i> is true, the display is refreshed each time lineTo(), drawLine(),  
+drawString(), etc. are called, otherwise, the display is refreshed only when updateDisplay() 
+is called or when the macro terminates.">
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="<a name=beep></a>
+<b>beep()</b><br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="beep()" func="no">
+			<Overload retVal="" descr="Emits an audible beep.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="bitDepth() " func="no">
+			<Overload retVal="" descr="Returns the bit depth of the active image: 8, 16, 24 (RGB) or 32 (float).
+">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="<a name=calibrate></a>
+<b>calibrate(value)</b><br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="calibrate" func="yes">
+			<Overload retVal="" descr="Uses the calibration function of the active image to convert a raw pixel value 
+to a density calibrated value.  The argument must be an integer in the range 0-255 
+(for 8-bit images) or 0-65535 (for 16-bit images). Returns the same value if the active 
+image does not have a calibration function.">
+				<Param name="value" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="call" func="yes">
+			<Overload retVal="" descr="Calls a public static method in a Java class, passing an arbitrary number
+of string arguments, and returning a string. Refer to the
+<a href=&quot;../../macros/CallJavaDemo.txt&quot;>CallJavaDemo</a> macro
+and the <a href=&quot;../../plugins/imp-props.html&quot;>ImpProps</a>
+plugin for examples. Note that the call() function does not work when ImageJ is 
+running as an unsigned applet.">
+				<Param name="&quot;class.method&quot;" />
+				<Param name="arg1" />
+				<Param name="arg2" />
+				<Param name="..." />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="changeValues" func="yes">
+			<Overload retVal="" descr="Changes pixels in the image or selection that have a value in the range <i>v1</i>-<i>v2</i> 
+to <i>v3</i>. For example, <i>changeValues(0,5,5)</i> changes all pixels less than 5 to 5, 
+and <i>changeValues(0x0000ff,0x0000ff,0xff0000)</i> changes all blue pixels in an RGB image to red.
+In ImageJ 1.52d or later, use changeValues(NaN,NaN,value) to replaces NaN values.">
+				<Param name="v1" />
+				<Param name="v2" />
+				<Param name="v3" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="charCodeAt" func="yes">
+			<Overload retVal="" descr="Returns the Unicode value of the character at the specified index in <i>string</i>. 
+Index values can range from 0 to lengthOf(<i>string</i>). Use the fromCharCode() function
+to convert one or more Unicode characters to a string.">
+				<Param name="string" />
+				<Param name="index" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="close()" func="no">
+			<Overload retVal="" descr="Closes the active image.  This function has the advantage of not closing the &quot;Log&quot;
+or &quot;Results&quot; window when you meant to close the active image. Use
+<i>run(&quot;Close&quot;)</i> to close non-image windows.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="close" func="yes">
+			<Overload retVal="" descr="Closes windows whose title matches 'pattern', which can contain the
+wildcard characters '*' (matches any character sequence) and '?'
+(matches single character).
+For example, close(&quot;Histo*&quot;) could be used to dispose all histogram windows.
+Non-image windows like &quot;Roi Manager&quot;
+have to be specified without wildcards. For text windows, wildcards
+are allowed if 'pattern' ends with &quot;.txt&quot;, &quot;.ijm&quot;, &quot;.js&quot; etc. Use close(&quot;*&quot;)
+to close all image windows. Use close(pattern, &quot;keep&quot;) to not close
+text or image windows with changes. If 'pattern' is &quot;\\Others&quot;, all
+images except the front image are closed. The most recent macro
+window is never closed.">
+				<Param name="pattern" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="cos" func="yes">
+			<Overload retVal="" descr="Returns the cosine of an angle (in radians).">
+				<Param name="angle" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="
+<a name=d2s></a>
+<b>d2s(n, decimalPlaces)</b><br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="d2s" func="yes">
+			<Overload retVal="" descr="Converts the number <i>n</i> into a string using the specified
+number of decimal places.
+Uses scientific notation if 'decimalPlaces is negative.
+Note that d2s stands for &quot;double to string&quot;.">
+				<Param name="n" />
+				<Param name="decimalPlaces" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Dialog.create(&quot;Title&quot;)" func="no">
+			<Overload retVal="" descr="Creates a dialog box with the specified title. Call <i>Dialog.addString()</i>, <i>Dialog.addNumber(),</i> etc. to 
+add components to the dialog. Call <i>Dialog.show()</i> to display the dialog and <i>Dialog.getString()</i>, 
+<a name=Dialog.getNumber></a>
+<i>Dialog.getNumber()</i>, etc. to retrieve the values entered by the user.
+Refer to the
+<a href=&quot;../../macros/DialogDemo.txt&quot;>DialogDemo</a>
+macro for an example.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Dialog.addMessage" func="yes">
+			<Overload retVal="" descr="Adds a message to the dialog.</i> The message can be broken into multiple
+lines by inserting new line characters (&quot;\n&quot;) into the string.">
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Dialog.addString" func="yes">
+			<Overload retVal="" descr="Adds a text field to the dialog, using the specified label and initial text.">
+				<Param name="label" />
+				<Param name="initialText" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Dialog.addString" func="yes">
+			<Overload retVal="" descr="Adds a text field to the dialog, where <i>columns</i> specifies the field 
+width in characters.">
+				<Param name="label" />
+				<Param name="initialText" />
+				<Param name="columns" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Dialog.addNumber" func="yes">
+			<Overload retVal="" descr="Adds a numeric field to the dialog, using the specified label and default value.">
+				<Param name="label" />
+				<Param name="default" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Dialog.addNumber" func="yes">
+			<Overload retVal="" descr="Adds a numeric field, using the specified label and default value. <i>DecimalPlaces</i>
+specifies the number of digits to right of decimal point, <i>columns</i> specifies the the field 
+width in characters and <i>units</i> is a string that is displayed to 
+the right of the field.">
+				<Param name="label" />
+				<Param name="default" />
+				<Param name="decimalPlaces" />
+				<Param name="columns" />
+				<Param name="units" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Dialog.addSlider" func="yes">
+			<Overload retVal="" descr="Adds a slider controlled numeric field to the dialog, using the specified label,
+and min, max and default values
+(<a href=&quot;../../macros/examples/SliderDemo.txt&quot;>example</a>).
+Values with decimal points are used when 
+(max-min)<=5 and min, max or default
+are non-integer.">
+				<Param name="label" />
+				<Param name="min" />
+				<Param name="max" />
+				<Param name="default" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Dialog.addCheckbox" func="yes">
+			<Overload retVal="" descr="Adds a checkbox to the dialog, using the specified label and default state (true or false).">
+				<Param name="label" />
+				<Param name="default" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Dialog.addCheckboxGroup" func="yes">
+			<Overload retVal="" descr="Adds a <i>rows</i>x<i>columns</i> grid of checkboxes to the dialog, using the specified labels and default states
+(<a href=&quot;../../macros/AddCheckboxGroupDemo.txt&quot;>example</a>).">
+				<Param name="rows" />
+				<Param name="columns" />
+				<Param name="labels" />
+				<Param name="defaults" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Dialog.addRadioButtonGroup" func="yes">
+			<Overload retVal="" descr="Adds a group of radio buttons to the dialog, where 'label' is the group label, 'items' is
+an array containing the button labels, 'rows' and 'columns' specify the grid size, and
+'default' is the label of the default button.
+(<a href=&quot;../../macros/examples/RadioButtonDemo.txt&quot;>example</a>).">
+				<Param name="label" />
+				<Param name="items" />
+				<Param name="rows" />
+				<Param name="columns" />
+				<Param name="default" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Dialog.addChoice" func="yes">
+			<Overload retVal="" descr="Adds a popup menu to the dialog, where <i>items</i> is a string array containing the menu items.">
+				<Param name="label" />
+				<Param name="items" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Dialog.addChoice" func="yes">
+			<Overload retVal="" descr="Adds a popup menu, where <i>items</i> is a string array containing the choices
+and <i>default</i> is the default choice.">
+				<Param name="label" />
+				<Param name="items" />
+				<Param name="default" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Dialog.addHelp" func="yes">
+			<Overload retVal="" descr="Adds a &quot;Help&quot; button that opens the specified URL in the default browser. This can be used to supply
+a help page for this dialog or macro. With v1.46b or later, displays an HTML formatted message if
+'url' starts with &quot;&lt;html&gt;&quot;
+(<a href=&quot;../../macros/examples/DialogWithHelp.txt&quot;>example</a>).">
+				<Param name="url" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Dialog.addToSameRow()" func="no">
+			<Overload retVal="" descr="Makes the next item added appear on the same row as the previous item.
+May be used for addNumericField, addSlider, addChoice, addCheckbox, addStringField,
+addMessage, addPanel, and before the showDialog() method. In the latter case,
+the buttons appear to the right of the previous item.
+Note that <i>addMessage</i> (and <i>addString</i> if a width of more than 8 is specified)
+use the remaining width, so it must be the last item of a row.
+Requires 1.51r.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Dialog.setInsets" func="yes">
+			<Overload retVal="" descr="Overrides the default insets (margins) used for the next component added to the dialog.<br>">
+				<Param name="top" />
+				<Param name="left" />
+				<Param name="bottom" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Dialog.setLocation" func="yes">
+			<Overload retVal="" descr="Sets the screen location where this dialog will be displayed.">
+				<Param name="x" />
+				<Param name="y" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Dialog.show()" func="no">
+			<Overload retVal="" descr="Displays the dialog and waits until the user clicks &quot;OK&quot; or &quot;Cancel&quot;. The macro 
+terminates if the user clicks &quot;Cancel&quot;.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Dialog.getString()" func="no">
+			<Overload retVal="" descr="Returns a string containing the contents of the next text field.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Dialog.getNumber()" func="no">
+			<Overload retVal="" descr="Returns the contents of the next numeric field.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Dialog.getCheckbox()" func="no">
+			<Overload retVal="" descr="Returns the state (true or false) of the next checkbox.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Dialog.getChoice()" func="no">
+			<Overload retVal="" descr="Returns the selected item (a string) from the next popup menu.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Dialog.getRadioButton()" func="no">
+			<Overload retVal="" descr="Returns the selected item (a string) from the next radio button group.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doCommand(&quot;Command&quot;)" func="no">
+			<Overload retVal="" descr="Runs an ImageJ menu command in a separate thread and returns immediately. As an example, 
+<i>doCommand(&quot;Start Animation&quot;)</i> starts animating the current stack in a separate 
+thread and the macro continues to execute. Use <i>run(&quot;Start Animation&quot;)</i> and the 
+macro hangs until the user stops the animation.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doWand" func="yes">
+			<Overload retVal="" descr="Equivalent to clicking on the current image at (x,y) with the wand tool.
+Note that some objects, especially one pixel wide lines,
+may not be reliably traced unless they have been thresholded (highlighted in red) 
+using <a href=&quot;#setThreshold&quot;>setThreshold</a>.">
+				<Param name="x" />
+				<Param name="y" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="doWand" func="yes">
+			<Overload retVal="" descr="Traces the boundary of the area with pixel values within
+'tolerance' of the value of the pixel at (x,y).
+'mode' can be &quot;4-connected&quot;, &quot;8-connected&quot; or &quot;Legacy&quot;.
+&quot;Legacy&quot; is for compatibility with previous versions of ImageJ;
+it is ignored if 'tolerance' > 0.">
+				<Param name="x" />
+				<Param name="y" />
+				<Param name="tolerance" />
+				<Param name="mode" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="drawLine" func="yes">
+			<Overload retVal="" descr="Draws a line between (x1, y1) and (x2, y2). Use setColor() to 
+specify the color of the line and setLineWidth() to vary the line width.
+See also:  <a href=&quot;#Overlay&quot;>Overlay.drawLine</a>.">
+				<Param name="x1" />
+				<Param name="y1" />
+				<Param name="x2" />
+				<Param name="y2" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="drawOval" func="yes">
+			<Overload retVal="" descr="Draws the outline of an oval using the current color and line width.
+See also: 
+<a href=&quot;#fillOval&quot;>fillOval</a>, 
+<a href=&quot;#setColor&quot;>setColor</a>, 
+<a href=&quot;#setLineWidth&quot;>setLineWidth</a>, 
+<a href=&quot;#autoUpdate&quot;>autoUpdate</a> and
+<a href=&quot;#Overlay&quot;>Overlay.drawEllipse</a>.">
+				<Param name="x" />
+				<Param name="y" />
+				<Param name="width" />
+				<Param name="height" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="drawRect" func="yes">
+			<Overload retVal="" descr="Draws the outline of a rectangle using the current color and line width.
+See also: 
+<a href=&quot;#fillRect&quot;>fillRect</a>, 
+<a href=&quot;#setColor&quot;>setColor</a>, 
+<a href=&quot;#setLineWidth&quot;>setLineWidth</a>, 
+<a href=&quot;#autoUpdate&quot;>autoUpdate</a> and
+<a href=&quot;#Overlay&quot;>Overlay.drawRect</a>">
+				<Param name="x" />
+				<Param name="y" />
+				<Param name="width" />
+				<Param name="height" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="drawString" func="yes">
+			<Overload retVal="" descr="Draws text at the specified location. 
+Call <a href=&quot;#setFont&quot;>setFont()</a>
+to specify the font.
+Call <a href=&quot;#setJustification&quot;>setJustification()</a>
+to have the text centered or right justified.
+Call <a href=&quot;#getStringWidth&quot;>getStringWidth()</a> to get the width of the
+text in pixels.
+Refer to the
+<a href=&quot;../../macros/TextDemo.txt&quot;>TextDemo</a> macro for examples
+and to
+<a href=&quot;../../macros/examples/DrawTextWithBackground.txt&quot;>DrawTextWithBackground</a>
+to see how to draw text with a background.">
+				<Param name="&quot;text&quot;" />
+				<Param name="x" />
+				<Param name="y" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="drawString" func="yes">
+			<Overload retVal="" descr="Draws text at the specified location with a filled background
+(<a href=&quot;../../macros/examples/DrawTextWithBackground.txt&quot;>examples</a>).">
+				<Param name="&quot;text&quot;" />
+				<Param name="x" />
+				<Param name="y" />
+				<Param name="background" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="dump()" func="no">
+			<Overload retVal="" descr="Writes the contents of the symbol table, the tokenized macro code and the variable stack to the &quot;Log&quot; window.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="<a name=endsWith></a>
+<b>endsWith(string, suffix)</b><br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="endsWith" func="yes">
+			<Overload retVal="" descr="Returns <i>true</i> (1) if <i>string</i> ends with <i>suffix</i>.
+See also: 
+<a href=&quot;#startsWith&quot;>startsWith</a>, 
+<a href=&quot;#indexOf&quot;>indexOf</a>,
+<a href=&quot;#substring&quot;>substring</a>,
+<a href=&quot;#matches&quot;>matches</a>. ">
+				<Param name="string" />
+				<Param name="suffix" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="eval" func="yes">
+			<Overload retVal="" descr="Evaluates (runs) one or more lines of macro code. An optional
+second argument can be used to pass a string to the macro
+being evaluated.
+See also: 
+<a href=&quot;../../macros/EvalDemo.txt&quot;>EvalDemo</a> macro and
+<a href=&quot;#runMacro&quot;>runMacro</a> function.">
+				<Param name="macro" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="eval" func="yes">
+			<Overload retVal="" descr="Evaluates the
+<a href=&quot;../javascript.html&quot;>JavaScript</a>
+code contained in the string <i>javascript</i>, for example
+<i>eval(&quot;script&quot;,&quot;IJ.getInstance().setAlwaysOnTop(true);&quot;)</i>.
+See also: <a href=&quot;#runMacro&quot;>runMacro(path,arg)</a>.">
+				<Param name="&quot;script&quot;" />
+				<Param name="javascript" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="eval" func="yes">
+			<Overload retVal="" descr="Evaluates the
+<a href=&quot;../../plugins/bsh/index.html&quot;>BeanShell</a>
+code contained in the string <i>script</i>.">
+				<Param name="&quot;bsh&quot;" />
+				<Param name="script" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="eval" func="yes">
+			<Overload retVal="" descr="Evaluates the
+<a href=&quot;../../plugins/jython/index.html&quot;>Python</a>
+code contained in the string <i>script</i>.">
+				<Param name="&quot;python&quot;" />
+				<Param name="script" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="exec" func="yes">
+			<Overload retVal="" descr="Executes a native command and returns the output of that command
+as a string. Also opens Web pages in the default browser and documents
+in other applications (e.g., Excel).
+With commands with multiple arguments, each argument should be passed as a separate string. For example<br>">
+				<Param name="string or strings" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="exit() exit(&quot;error message&quot;)" func="no">
+			<Overload retVal="" descr="Terminates execution of the macro and, optionally, displays an error message. ">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="exp" func="yes">
+			<Overload retVal="" descr="Returns the exponential number e (i.e., 2.718...) raised to the power of <i>n</i>.">
+				<Param name="n" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="<a name=file></a>
+ <b>File Functions</b><br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="File.append" func="yes">
+			<Overload retVal="" descr="Appends <i>string</i> to the end of the specified file.">
+				<Param name="string" />
+				<Param name="path" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="File.close" func="yes">
+			<Overload retVal="" descr="Closes the specified file, which must have been opened using File.open().">
+				<Param name="f" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="File.copy" func="yes">
+			<Overload retVal="" descr="Copies a file.">
+				<Param name="path1" />
+				<Param name="path2" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="File.dateLastModified" func="yes">
+			<Overload retVal="" descr="Returns the date and time the specified file was last modified.">
+				<Param name="path" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="File.delete" func="yes">
+			<Overload retVal="" descr="Deletes the specified file or directory. With v1.41e or later, returns &quot;1&quot; (true)
+if the file or directory was successfully deleted.
+If the file is a directory, it must be empty.
+The file must be in the user's home directory,  the ImageJ directory
+or the temp directory.">
+				<Param name="path" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="The directory path of the last file opened using a file open dialog, a file save dialog,
+drag and drop, <a href=&quot;#open&quot;>open(path)</a>
+or <a href=&quot;#runMacro&quot;>runMacro(path)</a>.<br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="File.exists" func="yes">
+			<Overload retVal="" descr="Returns &quot;1&quot; (true) if the specified file exists.<br>">
+				<Param name="path" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="File.getName" func="yes">
+			<Overload retVal="" descr="Returns the last name in <i>path</i>'s name  sequence.<br>">
+				<Param name="path" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="File.getParent" func="yes">
+			<Overload retVal="" descr="Returns the parent of the file specified by <i>path</i>.<br>">
+				<Param name="path" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="File.isDirectory" func="yes">
+			<Overload retVal="" descr="Returns &quot;1&quot; (true) if the specified file is a directory.<br>">
+				<Param name="path" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="File.lastModified" func="yes">
+			<Overload retVal="" descr="Returns the time the specified file was last modified as
+the number of milliseconds since January 1, 1970.<br>">
+				<Param name="path" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="File.length" func="yes">
+			<Overload retVal="" descr="Returns the length in bytes of the specified file as a string, or as
+a number when used in an assignment statement, 
+for example &quot;length=File.length(path)&quot;.">
+				<Param name="path" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="File.makeDirectory" func="yes">
+			<Overload retVal="" descr="Creates a directory.<br>">
+				<Param name="path" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="The name of the last file opened using a file open dialog, a file save dialog,
+drag and drop, or the <a href=&quot;#open&quot;>open(path)</a> function.<br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="The name of the last file opened with the extension removed.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="File.open" func="yes">
+			<Overload retVal="" descr="Creates a new text file and returns a file variable that refers to it. To write to the file, 
+pass the file variable to the
+<a href=&quot;#print&quot;>print</a> function.
+Displays a file save dialog box if <i>path</i> is an empty string.
+The file is closed when the macro exits.
+Currently, only one file can be open at a time.
+For an example, refer to the
+<a href=&quot;../../macros/SaveTextFileDemo.txt&quot;>SaveTextFileDemo</a> macro.">
+				<Param name="path" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="File.openAsString" func="yes">
+			<Overload retVal="" descr="Opens a text file and returns the contents as a string. Displays a file 
+open dialog box if <i>path</i> is an empty string. 
+Use <i>lines=split(str,&quot;\n&quot;)</i> to convert the string to
+an array of lines.">
+				<Param name="path" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="File.openAsRawString" func="yes">
+			<Overload retVal="" descr="Opens a file and returns up to the first 5,000 bytes as a string.
+Returns all the bytes in the file if the name ends with &quot;.txt&quot;.
+Refer to the
+<a href=&quot;../../macros/First10Bytes.txt&quot;>First10Bytes</a>
+and
+<a href=&quot;../../macros/ZapGremlins.txt&quot;>ZapGremlins</a>
+macros for examples.">
+				<Param name="path" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="File.openAsRawString" func="yes">
+			<Overload retVal="" descr="Opens a file and returns up to the first <i>count</i> bytes as a string.">
+				<Param name="path" />
+				<Param name="count" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="File.openUrlAsString" func="yes">
+			<Overload retVal="" descr="Opens a URL and returns the contents as a string. Returns an emptly
+string if the host or file cannot be found. With v1.41i and later, returns &quot;&lt;Error: message&gt;&quot;
+if there any error, including host or file not found.">
+				<Param name="url" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="File.openDialog" func="yes">
+			<Overload retVal="" descr="Displays a file open dialog and returns the path to the
+file choosen by the user
+(<a href=&quot;../../macros/OpenDialogDemo.txt&quot;>example</a>). 
+The macro exits if
+the user cancels the dialog.">
+				<Param name="title" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="File.rename" func="yes">
+			<Overload retVal="" descr="Renames, or moves, a file or directory. Returns &quot;1&quot; (true) if successful.">
+				<Param name="path1" />
+				<Param name="path2" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="File.saveString" func="yes">
+			<Overload retVal="" descr="Saves <i>string</i> as a file.">
+				<Param name="string" />
+				<Param name="path" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Returns the file name separator character (&quot;/&quot; or &quot;\&quot;).<br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fill()" func="no">
+			<Overload retVal="" descr="Fills the image or selection with the current drawing color.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fillOval" func="yes">
+			<Overload retVal="" descr="Fills an oval bounded by the specified rectangle with the current drawing color.
+See also: 
+<a href=&quot;#drawOval&quot;>drawOval</a>, 
+<a href=&quot;#setColor&quot;>setColor</a>, 
+<a href=&quot;#autoUpdate&quot;>autoUpdate</a>.">
+				<Param name="x" />
+				<Param name="y" />
+				<Param name="width" />
+				<Param name="height" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fillRect" func="yes">
+			<Overload retVal="" descr="Fills the specified rectangle with the current drawing color. 
+See also: 
+<a href=&quot;#drawRect&quot;>drawRect</a>, 
+<a href=&quot;#setColor&quot;>setColor</a>, 
+<a href=&quot;#autoUpdate&quot;>autoUpdate</a>.">
+				<Param name="x" />
+				<Param name="y" />
+				<Param name="width" />
+				<Param name="height" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Fit.doFit" func="yes">
+			<Overload retVal="" descr="Fits the specified equation to the points defined by <i>xpoints</i>, <i>ypoints</i>. <i>Equation</i>
+can be either the equation name or an index. The equation names are shown in the drop down menu
+ in the <i>Analyze&gt;Tools&gt;Curve Fitting</i> window. With ImageJ 1.42f or later, <i>equation</i> can
+ be a string containing a user-defined equation
+ (<a href=&quot;../../macros/examples/UserDefinedCurveFits.txt&quot;>example</a>).">
+				<Param name="equation" />
+				<Param name="xpoints" />
+				<Param name="ypoints" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Fit.doFit" func="yes">
+			<Overload retVal="" descr="Fits the specified equation to the points defined by <i>xpoints</i>, <i>ypoints</i>, using initial parameter
+values contained in <i>initialGuesses</i>, an array equal in length to the number of
+parameters in <i>equation</i>
+(<a href=&quot;../../macros/examples/RodbardSigmoidFit.txt&quot;>example</a>).">
+				<Param name="equation" />
+				<Param name="xpoints" />
+				<Param name="ypoints" />
+				<Param name="initialGuesses" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Returns R^2=1-SSE/SSD, where SSE is the sum of the squares of the errors and
+SSD is the sum of the squares of the deviations about the mean.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Fit.p" func="yes">
+			<Overload retVal="" descr="Returns the value of the specified parameter.">
+				<Param name="index" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Returns the number of parameters.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Fit.f" func="yes">
+			<Overload retVal="" descr="Returns the y value at <i>x</i>
+(<a href=&quot;../../macros/examples/PlotSigmoidDerivatives.txt&quot;>example</a>).">
+				<Param name="x" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Returns the number of equations.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Fit.getEquation" func="yes">
+			<Overload retVal="" descr="Gets the name and formula of the specified equation.">
+				<Param name="index" />
+				<Param name="name" />
+				<Param name="formula" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Plots the current curve fit.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Causes doFit() to write a description of the curve fitting results to the Log window.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Causes doFit() to display the simplex settings dialog.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="floodFill" func="yes">
+			<Overload retVal="" descr="Fills,  with the foreground color, pixels that are connected to, 
+and the same color as, the pixel at <i>(x, y)</i>.  
+Does 8-connected filling if  there is an optional string argument containing &quot;8&quot;, 
+for example <i>floodFill(x, y, &quot;8-connected&quot;)</i>.
+This function is used to implement the 
+<A href=&quot;../../macros/tools/FloodFillTool.txt&quot;>flood fill (paint bucket)</a> macro tool.">
+				<Param name="x" />
+				<Param name="y" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="floor" func="yes">
+			<Overload retVal="" descr="Returns the largest value that is not greater than
+<i>n</i> and is equal to an integer.
+See also: 
+<a href=&quot;#round&quot;>round</a>. ">
+				<Param name="n" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="fromCharCode" func="yes">
+			<Overload retVal="" descr="This function takes one or more Unicode values and returns a string. ">
+				<Param name="value1" />
+				<Param name="..." />
+				<Param name="valueN" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="<a name=getArgument></a>
+<b>getArgument()</b><br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getArgument()" func="no">
+			<Overload retVal="" descr="
+Returns the string argument passed to macros called by <a href=&quot;#runMacro&quot;>runMacro(macro, arg)</a>, 
+<a href=&quot;#eval&quot;>eval(macro)</a>, 
+<i>IJ.runMacro(macro, arg)</i> or <i>IJ.runMacroFile(path, arg)</i>.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getBoolean(&quot;message&quot;)" func="no">
+			<Overload retVal="" descr="Displays a dialog box containing the specified message and &quot;Yes&quot;, &quot;No&quot; and &quot;Cancel&quot; buttons. 
+Returns <i>true</i> (1) if the user clicks &quot;Yes&quot;, returns <i>false</i> (0) if the user clicks
+&quot;No&quot; and exits the macro if the user clicks &quot;Cancel&quot;.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getBoolean" func="yes">
+			<Overload retVal="" descr="Displays a dialog box containing the specified message and buttons with custom labels.">
+				<Param name="message" />
+				<Param name="yesLabel" />
+				<Param name="noLabel" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getBoundingRect" func="yes">
+			<Overload retVal="" descr="Replace by <a href=&quot;#getSelectionBounds&quot;>getSelectionBounds</a>.">
+				<Param name="x" />
+				<Param name="y" />
+				<Param name="width" />
+				<Param name="height" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getCursorLoc" func="yes">
+			<Overload retVal="" descr="Returns the cursor location in pixels and the mouse event modifier flags.
+The <i>z</i> coordinate is zero for 2D images. For stacks, it is one less than the 
+slice number. Use <a href=&quot;#toScaled&quot;>toScaled(x,y)</a> to scale the coordinates.
+For examples, see the
+<a href=&quot;../../macros//GetCursorLocDemo.txt&quot;>GetCursorLocDemo</a>  and the
+<a href=&quot;../../macros/tools/GetCursorLocDemoTool.txt&quot;>GetCursorLocDemoTool</a> macros.">
+				<Param name="x" />
+				<Param name="y" />
+				<Param name="z" />
+				<Param name="modifiers" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getDateAndTime" func="yes">
+			<Overload retVal="" descr="Returns the current date and time. Note that 'month' and 'dayOfWeek' are zero-based indexes.
+For an example, refer to the
+<a href=&quot;../../macros/GetDateAndTime.txt&quot;>GetDateAndTime</a> macro.
+See also: <a href=&quot;#getTime&quot;>getTime</a>.">
+				<Param name="year" />
+				<Param name="month" />
+				<Param name="dayOfWeek" />
+				<Param name="dayOfMonth" />
+				<Param name="hour" />
+				<Param name="minute" />
+				<Param name="second" />
+				<Param name="msec" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getDimensions" func="yes">
+			<Overload retVal="" descr="Returns the dimensions of the current image.">
+				<Param name="width" />
+				<Param name="height" />
+				<Param name="channels" />
+				<Param name="slices" />
+				<Param name="frames" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getDirectory" func="yes">
+			<Overload retVal="" descr="Displays a &quot;choose directory&quot; dialog and returns the selected directory, or returns
+the path to a specified directory, such as &quot;plugins&quot;, &quot;home&quot;, etc.
+The returned path ends with a file separator, either &quot;\&quot; (Windows) or &quot;/&quot;.
+Returns an empty string if the specified directory is not found or 
+aborts the macro if the user cancels the &quot;choose directory&quot; dialog box.
+For examples, see the
+<a href=&quot;../../macros/GetDirectoryDemo.txt&quot;>GetDirectoryDemo</a> and
+<a href=&quot;../../macros/ListFilesRecursively.txt&quot;>ListFilesRecursively</a> macros.
+See also: <a href=&quot;#getFileList&quot;>getFileList</a> and the <a href=&quot;#file&quot;>File functions</a>.
+
+<blockquote>
+
+<a name=getDirectory></a>
+<b>getDirectory(&quot;Choose a Directory&quot;)</b> - 
+Displays a file open dialog, using the argument as a title, and
+returns the path to the directory selected by the user.<br>">
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getDirectory(&quot;Choose a Directory&quot;)" func="no">
+			<Overload retVal="" descr="Displays a file open dialog, using the argument as a title, and
+returns the path to the directory selected by the user.<br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getDirectory(&quot;plugins&quot;)" func="no">
+			<Overload retVal="" descr="Returns the path to the plugins directory.<br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getDirectory(&quot;macros&quot;)" func="no">
+			<Overload retVal="" descr="Returns the path to the macros directory.<br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getDirectory(&quot;luts&quot;)" func="no">
+			<Overload retVal="" descr="Returns the path to the luts directory.<br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getDirectory(&quot;image&quot;)" func="no">
+			<Overload retVal="" descr="Returns the path to the directory that the active image was loaded from.<br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getDirectory(&quot;imagej&quot;)" func="no">
+			<Overload retVal="" descr="Returns the path to the ImageJ directory.<br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getDirectory(&quot;startup&quot;)" func="no">
+			<Overload retVal="" descr="Returns the path to the directory that ImageJ was launched from.<br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getDirectory(&quot;home&quot;)" func="no">
+			<Overload retVal="" descr="Returns the path to users home directory.<br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getDirectory(&quot;temp&quot;)" func="no">
+			<Overload retVal="" descr="Returns the path to the temporary directory (/tmp on Linux and Mac OS X).<br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getDisplayedArea" func="yes">
+			<Overload retVal="" descr="Returns the pixel coordinates of the actual displayed area of the image canvas.
+For an example, see the
+<a href=&quot;../../macros/tools/Pixel_Sampler_Tool.txt&quot;>Pixel Sampler Tool</a>.">
+				<Param name="x" />
+				<Param name="y" />
+				<Param name="width" />
+				<Param name="height" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getFileList" func="yes">
+			<Overload retVal="" descr="Returns an array containing the names of the files in the specified directory path. 
+The names of subdirectories have a &quot;/&quot; appended.
+For an example, see the
+<a href=&quot;../../macros/ListFilesRecursively.txt&quot;>ListFilesRecursively</a> macro.">
+				<Param name="directory" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getFontList()" func="no">
+			<Overload retVal="" descr="Returns an array containing the names of available system fonts
+(<a href=&quot;../../macros/Fonts.txt&quot;>example</a>).">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getHeight()" func="no">
+			<Overload retVal="" descr="Returns the height in pixels of the current image.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getHistogram" func="yes">
+			<Overload retVal="" descr="Returns the histogram of the current image or selection.  <i>Values</i> is an array that will 
+contain the pixel values for each of the histogram counts (or the bin starts for 16 and 32 bit images), or set this argument to 0.
+<i>Counts</i> is an array that
+will contain the histogram counts. <i>nBins</i> is the number of bins that will be used. 
+It must be 256 for 8 bit and RGB image, or an integer 
+greater than zero for 16 and 32 bit images. With 16-bit images, the <i>Values</i> argument
+is ignored if <i>nBins</i> is 65536.
+With 16-bit and 32-bit images, the histogram range can be specified
+using optional <i>histMin</i> and <i>histMax</i> arguments.
+See also: 
+<a href=&quot;#getStatistics&quot;>getStatistics</a>,
+<a href=&quot;../../macros/HistogramLister.txt&quot;>HistogramLister</a>,
+<a href=&quot;../../macros/HistogramPlotter.txt&quot;>HistogramPlotter</a>,
+<a href=&quot;../../macros/StackHistogramLister.txt&quot;>StackHistogramLister</a> and
+<a href=&quot;../../macros/CustomHistogram.txt&quot;>CustomHistogram</a>.">
+				<Param name="values" />
+				<Param name="counts" />
+				<Param name="nBins[" />
+				<Param name="histMin" />
+				<Param name="histMax]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getImageID()" func="no">
+			<Overload retVal="" descr="Returns the unique ID (a negative number) of the active image. Use the <i>selectImage(id)</i>, 
+<i>isOpen(id)</i> and <i>isActive(id)</i> functions to activate an image or to determine if 
+it is open or active. 
+">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getImageInfo()" func="no">
+			<Overload retVal="" descr="Returns a string containing the text that would
+be displayed by the <i>Image&gt;Show Info</i> command. 
+To retrieve the contents of a text window, use 
+<a HREF=&quot;#getInfo&quot;>getInfo(&quot;window.contents&quot;)</a>. 
+For an example, see the
+<a HREF=&quot;../../macros/ListDicomTags.txt&quot;>ListDicomTags</a> macros.
+See also: <a href=&quot;#getMetadata&quot;>getMetadata</a>.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getInfo(&quot;command.name&quot;)" func="no">
+			<Overload retVal="" descr="Returns the name of the most recently invoked command. The names of commands invoked
+using keyboard shortcuts are preceded by &quot;^&quot;
+(<a href=&quot;../../macros/examples/GetCommandNameDemo.txt&quot;>example</a>).">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getInfo" func="yes">
+			<Overload retVal="" descr="Returns the value of a DICOM tag in the form &quot;xxxx,xxxx&quot;,
+e.g. getInfo(&quot;0008,0060&quot;). Returns an empty string if
+the current image is not a DICOM or if the tag was not found.">
+				<Param name="DICOM_TAG" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getInfo(&quot;font.name&quot;)" func="no">
+			<Overload retVal="" descr="Returns the name of the current font.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getInfo(&quot;image.description&quot;)" func="no">
+			<Overload retVal="" descr="Returns the TIFF image description tag, or an empty string
+if this is not a TIFF image or the image description is not
+available.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getInfo(&quot;image.directory&quot;)" func="no">
+			<Overload retVal="" descr="Returns the directory that the current image was loaded
+from, or an empty string if the directory is not available.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getInfo(&quot;image.filename&quot;)" func="no">
+			<Overload retVal="" descr="Returns the name of the file that the current image was loaded
+from, or an empty string if the file name is not available.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getInfo(&quot;image.subtitle&quot;)" func="no">
+			<Overload retVal="" descr="Returns the subtitle of the current image. This is the line of
+information displayed above the image and below the title bar.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getInfo(&quot;log&quot;)" func="no">
+			<Overload retVal="" descr="Returns the contents of the Log window,
+or &quot;&quot; if the Log window is not open.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getInfo(&quot;macro.filepath&quot;)" func="no">
+			<Overload retVal="" descr="Returns the filepath of the most recently loaded macro or script.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getInfo(&quot;micrometer.abbreviation&quot;)" func="no">
+			<Overload retVal="" descr="Returns &quot;&micro;m&quot;, the abbreviation for micrometer.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getInfo(&quot;os.name&quot;)" func="no">
+			<Overload retVal="" descr="Returns the OS name (&quot;Mac OS X&quot;, &quot;Linux&quot; or &quot;Windows&quot;).">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getInfo(&quot;overlay&quot;)" func="no">
+			<Overload retVal="" descr="Returns information about the current image's overlay.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getInfo(&quot;selection.name&quot;)" func="no">
+			<Overload retVal="" descr="Returns the name of the current selection, or &quot;&quot; if there is no selection
+or the selection does not have a name. The argument can also be
+&quot;roi.name&quot;.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getInfo(&quot;selection.color&quot;)" func="no">
+			<Overload retVal="" descr="Returns the color of the current selection.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getInfo(&quot;slice.label&quot;)" func="no">
+			<Overload retVal="" descr="Return the label of the current stack slice. This is the string that 
+appears in parentheses in the subtitle, the line of information 
+above the image. Returns an empty
+string if the current image is not a stack or the current
+slice does not have a label.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getInfo(&quot;threshold.method&quot;)" func="no">
+			<Overload retVal="" descr="Returns the current thresholding method (&quot;IsoData&quot;, &quot;Otsu&quot;, etc).">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getInfo(&quot;threshold.mode&quot;)" func="no">
+			<Overload retVal="" descr="Returns the current thresholding mode (&quot;Red&quot;,&quot;B&W&quot; or&quot;Over/Under&quot;).">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getInfo(&quot;window.contents&quot;)" func="no">
+			<Overload retVal="" descr="If the front window is a text window, returns the contents of that window. 
+If the front window is an image, returns a string containing the text that would
+be displayed by <i>Image&gt;Show Info</i>.  Note that 
+<a HREF=&quot;#getImageInfo&quot;>getImageInfo()</a>
+is a more reliable way to retrieve information about an image.
+Use split(getInfo(),'\n') to break the string returned by this function into separate lines.
+Replaces the getInfo() function.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getInfo(&quot;window.title&quot;)" func="no">
+			<Overload retVal="" descr="Returns the title of the front-most window.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getInfo(&quot;window.type&quot;)" func="no">
+			<Overload retVal="" descr="Returns the type (&quot;Image&quot;, &quot;Text&quot;, &quot;ResultsTable&quot;, &quot;Editor&quot;, &quot;Plot&quot;, &quot;Histogram&quot;, etc.) of the front window.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getInfo" func="yes">
+			<Overload retVal="" descr="Returns the Java property associated with the specified key (e.g., &quot;java.version&quot;,
+&quot;os.name&quot;, &quot;user.home&quot;, &quot;user.dir&quot;, etc.). Returns an empty string if there is
+no value associated with the key.
+See also:
+<a href=&quot;#getList-properties&quot;>getList(&quot;java.properties&quot;)</a>.">
+				<Param name="key" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getLine" func="yes">
+			<Overload retVal="" descr="Returns the starting coordinates, ending coordinates and width of the current straight line 
+selection. The coordinates and line width are in pixels.
+Sets x1 = -1 if there is no line selection.
+Refer to the
+<a HREF=&quot;../../macros/GetLineDemo.txt&quot;>GetLineDemo</a> macro for an example.">
+				<Param name="x1" />
+				<Param name="y1" />
+				<Param name="x2" />
+				<Param name="y2" />
+				<Param name="lineWidth" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getList(&quot;image.titles&quot;)" func="no">
+			<Overload retVal="" descr="Returns a list (array) of image window titles.
+For an example, see the
+<a href=&quot;../../macros/DisplayWindowTitles.txt&quot;>DisplayWindowTitles</a> macro.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getList(&quot;window.titles&quot;)" func="no">
+			<Overload retVal="" descr="Returns a list (array) of non-image window titles.
+For an example, see the
+<a href=&quot;../../macros/DisplayWindowTitles.txt&quot;>DisplayWindowTitles</a> macro.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getList(&quot;java.properties&quot;)" func="no">
+			<Overload retVal="" descr="Returns a list (array) of Java property keys.
+For an example, see the
+<a HREF=&quot;../../macros/DisplayJavaProperties.txt&quot;>DisplayJavaProperties</a> macro.
+See also:
+<a href=&quot;#getInfo-java&quot;>getInfo(key)</a>.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getList(&quot;threshold.methods&quot;)" func="no">
+			<Overload retVal="" descr="Returns a list of the available automatic thresholding methods
+(<a HREF=&quot;../../macros/examples/AutoThresholdingDemo.txt&quot;>example</a>).">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getList(&quot;LUTs&quot;)" func="no">
+			<Overload retVal="" descr="Returns, as an array, a list of the LUTs in the <i>Image&gt;Lookup Tables</i> menu
+(<a HREF=&quot;../../macros/Time-Lapse_Color_Coder.txt&quot;>example</a>).">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getLocationAndSize" func="yes">
+			<Overload retVal="" descr="Returns the location and size, in screen coordinates, of the active image window. Use 
+<a href=&quot;#getWidth&quot;>getWidth</a> and
+<a href=&quot;#getHeight&quot;>getHeight</a>
+to get the width and height, in image coordinates, of the active image.
+See also:
+<a href=&quot;#setLocation&quot;>setLocation</a>,">
+				<Param name="x" />
+				<Param name="y" />
+				<Param name="width" />
+				<Param name="height" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getLut" func="yes">
+			<Overload retVal="" descr="Returns three arrays containing the red, green and blue intensity values from the
+current lookup table. See the
+<a href=&quot;../../macros/LookupTables.txt&quot;>LookupTables</a>
+macros for examples.">
+				<Param name="reds" />
+				<Param name="greens" />
+				<Param name="blues" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getMetadata(&quot;Info&quot;)" func="no">
+			<Overload retVal="" descr="Returns the metadata (a string) from the &quot;Info&quot; property of the current image.
+With DICOM images, this is the information (tags) in the DICOM header.
+See also: <a href=&quot;#setMetadata&quot;>setMetadata</a>. ">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getMetadata(&quot;Label&quot;)" func="no">
+			<Overload retVal="" descr="Returns the current slice label.
+The first line of the this label (up to 60 characters) is display
+as part of the image subtitle. 
+With DICOM stacks, returns the metadata from the DICOM header.
+See also: <a href=&quot;#setMetadata&quot;>setMetadata</a>. ">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getMinAndMax" func="yes">
+			<Overload retVal="" descr="Returns the minimum and maximum displayed pixel values (display range).
+See the
+<a href=&quot;../../macros/DisplayRangeMacros.txt&quot;>DisplayRangeMacros</a>
+for examples.
+">
+				<Param name="min" />
+				<Param name="max" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getNumber" func="yes">
+			<Overload retVal="" descr="Displays a dialog box and returns the number entered by the user. 
+The first argument is the prompting message and the second is the value initially 
+displayed in the dialog. Exits the macro if the user clicks on &quot;Cancel&quot; in the dialog.
+Returns <i>defaultValue</i> if the user enters an invalid number.
+See also: <a href=&quot;#dialog&quot;>Dialog.create</a>. ">
+				<Param name="&quot;prompt&quot;" />
+				<Param name="defaultValue" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPixel" func="yes">
+			<Overload retVal="" descr="Returns the value of the pixel at <i>(x,y)</i>. Note that pixels in RGB images
+contain red, green and blue components that need to be extracted using shifting
+and masking. See the <a href=&quot;../../macros/tools/ColorPickerTool.txt&quot;>Color Picker Tool</a>
+macro for an example that shows how to do this.">
+				<Param name="x" />
+				<Param name="y" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getPixelSize" func="yes">
+			<Overload retVal="" descr="Returns the unit of length (as a string) and the pixel dimensions.
+For an example, see the
+<a href=&quot;../../macros/ShowImageInfo.txt&quot;>ShowImageInfo</a> macro.
+See also: <a href=&quot;#getVoxelSize&quot;>getVoxelSize</a>. ">
+				<Param name="unit" />
+				<Param name="pixelWidth" />
+				<Param name="pixelHeight" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getProfile()" func="no">
+			<Overload retVal="" descr="Runs <i>Analyze&gt;Plot Profile</i> (without displaying the plot) and returns the 
+intensity values as an array. For an example, see the
+<a href=&quot;../../macros/GetProfileExample.txt&quot;>GetProfileExample</a> macro.
+See also: <a href=&quot;#Plot.getValues&quot;>Plot.getValues()</a>.
+">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getRawStatistics" func="yes">
+			<Overload retVal="" descr="This function is similar to <a href=&quot;#getStatistics&quot;>getStatistics</a> except that the values 
+returned are uncalibrated and the histogram of
+16-bit images has a bin width of one and is returned as a <i>max</i>+1 element array.
+For examples, refer to the
+<a href=&quot;../../macros/ShowStatistics.txt&quot;>ShowStatistics</a> macro set.
+See also: 
+<a href=&quot;#calibrate&quot;>calibrate</a> and
+<a href=&quot;#List.setMeasurements&quot;>List.setMeasurements</a>">
+				<Param name="nPixels" />
+				<Param name="mean" />
+				<Param name="min" />
+				<Param name="max" />
+				<Param name="std" />
+				<Param name="histogram" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getResult" func="yes">
+			<Overload retVal="" descr="Returns a measurement from the ImageJ results table or NaN if the
+specified column is not found. The first 
+argument specifies a column in the table. It must be a
+&quot;Results&quot; window column label, such as &quot;Area&quot;, &quot;Mean&quot; or &quot;Circ.&quot;.
+The second argument specifies the row, where 0&lt;=<i>row</i>&lt;nResults.
+<i>nResults</i> is a predefined variable that contains the current measurement 
+count. (Actually, it's a built-in function with the &quot;()&quot; optional.) 
+Omit the second argument and the row defaults to 
+nResults-1 (the last row in the results table).
+See also: 
+<a href=&quot;#nResults&quot;>nResults</a>,
+<a href=&quot;#setResult&quot;>setResult</a>,
+<a href=&quot;#isNaN&quot;>isNaN</a>,
+<a href=&quot;#getResultLabel&quot;>getResultLabel</a>. ">
+				<Param name="&quot;Column&quot;" />
+				<Param name="row" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getResultString" func="yes">
+			<Overload retVal="" descr="Returns a string from the ImageJ results table or &quot;null&quot; if the
+specified column is not found. The first 
+argument specifies a column in the table.
+The second specifies the row, where 0&lt;=<i>row</i>&lt;nResults.">
+				<Param name="&quot;Column&quot;" />
+				<Param name="row" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getResultLabel" func="yes">
+			<Overload retVal="" descr="Returns the label of the specified row in the results table, or an empty
+string if <i>Display Label</i> is not checked in <i>Analyze&gt;Set Measurements</i>. ">
+				<Param name="row" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getSelectionBounds" func="yes">
+			<Overload retVal="" descr="Returns the smallest rectangle that can completely contain the current selection. <i>x</i> and <i>y</i> 
+are the pixel coordinates of the upper left corner of the rectangle. <i>width</i> and <i>height</i> are the width and 
+height of the rectangle in pixels. If there is no selection, 
+returns (0, 0, ImageWidth, ImageHeight). 
+See also: <a href=&quot;#selectionType&quot;>selectionType</a> and
+<a href=&quot;#setSelectionLocation&quot;>setSelectionLocation</a>. ">
+				<Param name="x" />
+				<Param name="y" />
+				<Param name="width" />
+				<Param name="height" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getSelectionCoordinates" func="yes">
+			<Overload retVal="" descr="Returns two arrays containing the X and Y coordinates, in pixels, of the
+points that define the current selection. See the
+<a href=&quot;../../macros/SelectionCoordinates.txt&quot;>SelectionCoordinates</a>
+macro for an example.
+See also:
+
+<a href=&quot;#selectionType&quot;>selectionType</a>,
+<a href=&quot;#getSelectionBounds&quot;>getSelectionBounds</a>. ">
+				<Param name="xpoints" />
+				<Param name="ypoints" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getSliceNumber()" func="no">
+			<Overload retVal="" descr="Returns the number of the currently displayed stack image, an integer between 1 and 
+<a href=&quot;#nSlices&quot;>nSlices</a>.  Returns 1 if the active image is not a stack. 
+See also:
+<a href=&quot;#setSlice&quot;>setSlice</a>, <a href=&quot;#Stack.getPosition&quot;>Stack.getPosition</a>.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getStatistics" func="yes">
+			<Overload retVal="" descr="Returns the area, average pixel value, minimum pixel value,
+maximum pixel value, standard deviation of the pixel values 
+and histogram of the active image or selection. The histogram 
+is returned  as a 256 element array. For 8-bit and RGB
+images, the histogram bin width is one. For 16-bit and 32-bit images,
+the bin width is (<i>max</i>-<i>min</i>)/256.
+For examples, refer to the
+<a href=&quot;../../macros/ShowStatistics.txt&quot;>ShowStatistics</a> macro set.
+Note that trailing arguments can be omitted. For example, you can use <i>getStatistics(area)</i>, 
+<i>getStatistics(area, mean)</i> or <i>getStatistics(area, mean, min, max)</i>.
+See also: 
+<a href=&quot;#getRawStatistics&quot;>getRawStatistics</a> and
+<a href=&quot;#List.setMeasurements&quot;>List.setMeasurements</a>">
+				<Param name="area" />
+				<Param name="mean" />
+				<Param name="min" />
+				<Param name="max" />
+				<Param name="std" />
+				<Param name="histogram" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getString" func="yes">
+			<Overload retVal="" descr="Displays a dialog box and returns the string entered by the user. 
+The first argument is the prompting message and the second is the initial 
+string value. Exits the macro if the user clicks on &quot;Cancel&quot; or enters an empty string.
+See also: <a href=&quot;#dialog&quot;>Dialog.create</a>. ">
+				<Param name="&quot;prompt&quot;" />
+				<Param name="&quot;default&quot;" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getStringWidth" func="yes">
+			<Overload retVal="" descr="Returns the width in pixels of the specified string. 
+See also: <a href=&quot;#setFont&quot;>setFont</a>, <a href=&quot;#drawString&quot;>drawString</a>. ">
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getThreshold" func="yes">
+			<Overload retVal="" descr="Returns the lower and upper threshold levels. Both variables are set to -1 
+if the active image is not thresholded.
+See also:
+<a href=&quot;#setThreshold&quot;>setThreshold</a>, 
+<a href=&quot;#getThreshold&quot;>getThreshold</a>, 
+<a href=&quot;#resetThreshold&quot;>resetThreshold</a>. ">
+				<Param name="lower" />
+				<Param name="upper" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getTime()" func="no">
+			<Overload retVal="" descr="Returns the current time in milliseconds. The granularity of the time varies considerably 
+from one platform to the next.  On Windows NT, 2K, XP it is about 10ms.  On other Windows
+versions it can be as poor as 50ms.  On many Unix platforms, including Mac OS X,  it 
+actually is 1ms.
+See also: <a href=&quot;#getDateAndTime&quot;>getDateAndTime</a>.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getTitle()" func="no">
+			<Overload retVal="" descr="Returns the title of the current image.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getValue(&quot;color.foreground&quot;)" func="no">
+			<Overload retVal="" descr="Returns the current foreground color as a value that can be passed to
+the <a href=&quot;#setColor&quot;>setColor(value)</a> function.
+The value returned is the pixel value used by the <i>Edit&gt;Fill</i>
+command and by drawing tools.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getValue(&quot;color.background&quot;)" func="no">
+			<Overload retVal="" descr="Returns the current background color as a value that can be passed to
+the <a href=&quot;#setColor&quot;>setColor(value)</a> function. 
+The value returned is the pixel value used by the <i>Edit&gt;Clear</i>
+command.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getValue(&quot;rgb.foreground&quot;)" func="no">
+			<Overload retVal="" descr="Returns the current foregound color as an RGB pixel value
+(<a href=&quot;../../macros/examples/ForegroundBackgroundColors.txt&quot;>example</a>).">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getValue(&quot;rgb.background&quot;)" func="no">
+			<Overload retVal="" descr="Returns the current backgound color as an RGB pixel value.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getValue(&quot;font.size&quot;)" func="no">
+			<Overload retVal="" descr="Returns the size, in points, of the current font.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getValue(&quot;font.height&quot;)" func="no">
+			<Overload retVal="" descr="Returns the height, in pixels, of the current font.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getValue(&quot;selection.width&quot;)" func="no">
+			<Overload retVal="" descr="Returns the stroke width of the current selection.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getValue(&quot;results.count&quot;)" func="no">
+			<Overload retVal="" descr="Returns the number of lines in the current results table. Unlike
+<a href=&quot;#nResults&quot;>nResults</a>, works with tables that
+are not named &quot;Results&quot;.
+Requires 1.49t.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getVoxelSize" func="yes">
+			<Overload retVal="" descr="Returns the voxel size and unit of length (&quot;pixel&quot;, &quot;mm&quot;, etc.) of the current 
+image or stack.
+See also: <a href=&quot;#getPixelSize&quot;>getPixelSize</a>, <a href=&quot;#setVoxelSize&quot;>setVoxelSize</a>.">
+				<Param name="width" />
+				<Param name="height" />
+				<Param name="depth" />
+				<Param name="unit" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getVersion()" func="no">
+			<Overload retVal="" descr="Returns the ImageJ version number as a string (e.g., &quot;1.34s&quot;).
+See also: <a href=&quot;#IJ.getFullVersion&quot;>IJ.getFullVersion</a>.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getWidth()" func="no">
+			<Overload retVal="" descr="">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="getZoom()" func="no">
+			<Overload retVal="" descr="Returns the magnification of the active image, a number in the range 0.03125 to 32.0
+(3.1% to 3200%).">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="
+<a name=IJ></a>
+ <b>IJ Functions</b><br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="IJ.deleteRows" func="yes">
+			<Overload retVal="" descr="Deletes rows <i>index1</i> through <i>index2</i> in the results table.">
+				<Param name="index1" />
+				<Param name="index2" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="IJ.deleteRows" func="yes">
+			<Overload retVal="" descr="Returns the ImageJ version and build number as a string (e.g., &quot;1.52d11&quot;).">
+				<Param name="index1" />
+				<Param name="index2" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="IJ.getToolName()" func="no">
+			<Overload retVal="" descr="Returns the name of the currently selected tool.
+See also: 
+<a href=&quot;#setTool&quot;>setTool</a>.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Returns the ImageJ version and build number as a string (e.g., &quot;1.52d11&quot;).">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="IJ.freeMemory()" func="no">
+			<Overload retVal="" descr="Returns the memory status string (e.g., &quot;2971K of 658MB (<1%)&quot;) that is displayed
+when the users clicks in the ImageJ status bar.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="IJ.currentMemory()" func="no">
+			<Overload retVal="" descr="Returns, as a string, the amount of memory in bytes currently used by ImageJ.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="IJ.log" func="yes">
+			<Overload retVal="" descr="Displays <i>string</i> in the Log window.">
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="IJ.maxMemory()" func="no">
+			<Overload retVal="" descr="Returns, as a string, the amount of memory in bytes available to ImageJ. This value
+(the Java heap size) is set in the <i>Edit&gt;Options&gt;Memory & Threads</i> dialog box.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="IJ.pad" func="yes">
+			<Overload retVal="" descr="Pads 'n' with leading zeros and returns the result
+(<a href=&quot;../../macros/examples/StackOverlay.txt&quot;>example</a>).">
+				<Param name="n" />
+				<Param name="length" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="IJ.redirectErrorMessages()" func="no">
+			<Overload retVal="" descr="Causes next image opening error to be redirected to the Log window
+and prevents the macro from being aborted
+(<a href=&quot;../../macros/examples/BatchMeasureWithRedirectedErrors.txt&quot;>example</a>).">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="IJ.renameResults" func="yes">
+			<Overload retVal="" descr="Changes the title of the &quot;Results&quot; table to the string <i>name</i>.">
+				<Param name="name" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="IJ.renameResults" func="yes">
+			<Overload retVal="" descr="Changes the title of a results table from <i>oldName</i> to <i>newName</i>.">
+				<Param name="oldName" />
+				<Param name="newName" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="imageCalculator" func="yes">
+			<Overload retVal="" descr="Runs the <i>Process&gt;Image Calculator</i> tool, where
+
+<i>operator</i> (&quot;add&quot;,&quot;subtract&quot;,&quot;multiply&quot;,&quot;divide&quot;, &quot;and&quot;, &quot;or&quot;, &quot;xor&quot;, &quot;min&quot;, &quot;max&quot;, &quot;average&quot;, &quot;difference&quot; or &quot;copy&quot;) 
+specifies the operation, and <i>img1</i> and <i>img2</i> specify the operands. <i>img1</i> and <i>img2</i> can be
+either an image title (a string) or an image ID (an integer). The <i>operator</i> string can include up to three modifiers: 
+&quot;create&quot; (e.g., &quot;add create&quot;) causes the result to
+be stored in a new window, &quot;32-bit&quot; causes the result to be 32-bit floating-point 
+and &quot;stack&quot; causes the entire stack to be processed.
+See the <a href=&quot;../../macros/ImageCalculatorDemo.txt&quot;>ImageCalculatorDemo</a> macros for examples.">
+				<Param name="operator" />
+				<Param name="img1" />
+				<Param name="img2" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="indexOf" func="yes">
+			<Overload retVal="" descr="Returns the index within <i>string</i> of the first occurrence of
+<i>substring</i>.
+See also: 
+<a href=&quot;#lastIndexOf&quot;>lastIndexOf</a>,
+<a href=&quot;#startsWith&quot;>startsWith</a>, 
+<a href=&quot;#endsWith&quot;>endsWith</a>,
+<a href=&quot;#substring&quot;>substring</a>,
+<a href=&quot;#toLowerCase&quot;>toLowerCase</a>, 
+<a href=&quot;#replace&quot;>replace</a>,
+<a href=&quot;#matches&quot;>matches</a>. ">
+				<Param name="string" />
+				<Param name="substring" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="indexOf" func="yes">
+			<Overload retVal="" descr="Returns the index within <i>string</i> of the first occurrence of
+<i>substring</i>, with the search starting at <i>fromIndex</i>.">
+				<Param name="string" />
+				<Param name="substring" />
+				<Param name="fromIndex" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="is(&quot;animated&quot;)" func="no">
+			<Overload retVal="" descr="Returns <i>true</i> if the current image is an animated stack.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="is(&quot;applet&quot;)" func="no">
+			<Overload retVal="" descr="Returns <i>true</i> if ImageJ is running as an applet.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="is(&quot;Batch Mode&quot;)" func="no">
+			<Overload retVal="" descr="Returns <i>true</i> if the macro interpreter is running in batch mode.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="is(&quot;binary&quot;)" func="no">
+			<Overload retVal="" descr="Returns <i>true</i> if the current image is binary (8-bit with only 0 and 255 values).">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="is(&quot;Caps Lock Set&quot;)" func="no">
+			<Overload retVal="" descr="Returns <i>true</i> if the caps lock key is set. Always return <i>false</i>
+on some platforms.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="is(&quot;changes&quot;)" func="no">
+			<Overload retVal="" descr="Returns <i>true</i> if the current image's 'changes' flag is set.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="is(&quot;composite&quot;)" func="no">
+			<Overload retVal="" descr="Returns <i>true</i> if the current image is a a multi-channel
+stack that uses the CompositeImage class.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="is(&quot;global scale&quot;)" func="no">
+			<Overload retVal="" descr="Returns <i>true</i> if there is global spatial calibration.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="is(&quot;grayscale&quot;)" func="no">
+			<Overload retVal="" descr="Returns <i>true</i> if the current image is grayscale, or
+an RGB image with identical R, G and B channels.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="is(&quot;Inverting LUT&quot;)" func="no">
+			<Overload retVal="" descr="Returns <i>true</i> if the current image is using an inverting (monotonically decreasing) lookup table.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="is(&quot;InvertY&quot;)" func="no">
+			<Overload retVal="" descr="Returns <i>true</i> if the 'invertY' property of the active image is enabled.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="is(&quot;locked&quot;)" func="no">
+			<Overload retVal="" descr="Returns <i>true</i> if the current image is locked.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="is(&quot;Virtual Stack&quot;)" func="no">
+			<Overload retVal="" descr="Returns <i>true</i> if the current image is a virtual stack.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isActive" func="yes">
+			<Overload retVal="" descr="Returns <i>true</i> if the image with the specified ID is active.">
+				<Param name="id" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isKeyDown" func="yes">
+			<Overload retVal="" descr="Returns <i>true</i> if the specified key is pressed, where <i>key</i> must be &quot;shift&quot;, &quot;alt&quot; or &quot;space&quot;.
+See also: 
+<a href=&quot;#setKeyDown&quot;>setKeyDown</a>.">
+				<Param name="key" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isNaN" func="yes">
+			<Overload retVal="" descr="Returns <i>true</i> if the value of the number <i>n</i> is NaN (Not-a-Number).
+A common way to create a NaN is to divide zero by zero. Comparison with a NaN always
+returns <i>false</i> so &quot;if (n!=n)&quot; is equilvalent to (isNaN(n))&quot;. Note that the numeric constant
+NaN is predefined in the macro language. The
+<a href=&quot;../../macros/examples/NaNs.txt&quot;>NaNs</a>
+macro demonstrates how to remove NaNs from an image.
+">
+				<Param name="n" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isOpen" func="yes">
+			<Overload retVal="" descr="Returns <i>true</i> if the image with the specified ID is open.">
+				<Param name="id" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="isOpen(&quot;Title&quot;)" func="no">
+			<Overload retVal="" descr="Returns <i>true</i> if the window with the specified title is open.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="<a name=lastIndexOf></a>
+<b>lastIndexOf(string, substring)</b><br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="lastIndexOf" func="yes">
+			<Overload retVal="" descr="Returns the index within <i>string</i> of the rightmost occurrence of
+<i>substring</i>.
+See also: 
+<a href=&quot;#indexOf&quot;>indexOf</a>,
+<a href=&quot;#startsWith&quot;>startsWith</a>, 
+<a href=&quot;#endsWith&quot;>endsWith</a>,
+<a href=&quot;#substring&quot;>substring</a>. ">
+				<Param name="string" />
+				<Param name="substring" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="lengthOf" func="yes">
+			<Overload retVal="" descr="Returns the length of a string or array.">
+				<Param name="str" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="lineTo" func="yes">
+			<Overload retVal="" descr="Draws a line from current location to (<i>x,y</i>) .
+See also: <a href=&quot;#Overlay&quot;>Overlay.lineTo</a>.">
+				<Param name="x" />
+				<Param name="y" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="List.set" func="yes">
+			<Overload retVal="" descr="Adds a key/value pair to the list.">
+				<Param name="key" />
+				<Param name="value" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="List.get" func="yes">
+			<Overload retVal="" descr="Returns the string value associated with <i>key</i>, or
+an empty string if the key is not found.<br>">
+				<Param name="key" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="List.getValue" func="yes">
+			<Overload retVal="" descr="When used in an assignment statement, returns the value
+associated with <i>key</i> as a number. Aborts the
+macro if the value is not a number or the key is not found.">
+				<Param name="key" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Returns the size of the list.<br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="List.clear()" func="no">
+			<Overload retVal="" descr="Resets the list.<br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="List.setList" func="yes">
+			<Overload retVal="" descr="Loads the key/value pairs in the string <i>list</i>.<br>">
+				<Param name="list" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Returns the list as a string.<br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Measures the current image or selection and loads the resulting
+keys (Results table column headings) and values into the list.
+Use <i>List.setMeasurements(&quot;limit&quot;)</i> to measure using the
+&quot;Limit to threshold&quot; option. All parameters listed in
+the <i>Analyze&gt;Set Measurements</i> dialog box are measured,
+including those that are unchecked.
+Use List.getValue() in an assignment statement to retrieve the values.
+See the
+<a href=&quot;../../macros/DrawEllipse.txt&quot;>DrawEllipse</a>
+macro for an example.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="List.setMeasurements(&quot;limit&quot;)" func="no">
+			<Overload retVal="" descr="This is a version of List.setMeasurements that enables the
+&quot;Limit to threshold&quot; option.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Loads the ImageJ menu commands (as keys) and the plugins that
+implement them (as values).<br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="List.toArrays" func="yes">
+			<Overload retVal="" descr="Retrieves keys and values as a pair of string arrays, sorted alphabetically for keys.">
+				<Param name="keys" />
+				<Param name="values" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="List.fromArrays" func="yes">
+			<Overload retVal="" descr="Creates the List from keys and values arrays.">
+				<Param name="keys" />
+				<Param name="values" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="List.indexOf" func="yes">
+			<Overload retVal="" descr="Returns the alphabetic position of the specified key, or -1 if not found.
+Note that this function, as well as List.size, returns a string.">
+				<Param name="key" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="log" func="yes">
+			<Overload retVal="" descr="Returns the natural logarithm (base e) of <i>n</i>. Note that log10(n) = log(n)/log(10).
+">
+				<Param name="n" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="
+<a name=makeArrow></a>
+<b>makeArrow(x1, y1, x2, y2, style)</b><br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="makeArrow" func="yes">
+			<Overload retVal="" descr="Creates an arrow selection, where 'style' is a string containing
+&quot;filled&quot;, &quot;notched&quot;, &quot;open&quot;, &quot;headless&quot; or &quot;bar&quot;, plus the optionial modifiers
+&quot;outline&quot;, &quot;double&quot;, &quot;small&quot;, &quot;medium&quot; and &quot;large&quot;
+(<a href=&quot;../../macros/examples/Arrows.txt&quot;>example</a>).
+See also: <a href=&quot;#Roi.setStrokeWidth&quot;>Roi.setStrokeWidth</a>
+and <a href=&quot;#Roi.setStrokeColor&quot;>Roi.setStrokeColor</a>.
+Requires 1.49a.">
+				<Param name="x1" />
+				<Param name="y1" />
+				<Param name="x2" />
+				<Param name="y2" />
+				<Param name="style" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="makeEllipse" func="yes">
+			<Overload retVal="" descr="Creates an elliptical selection, where <i>x1,y1,x2,y2</i> specify the major axis of the 
+ellipse and <i>aspectRatio</i> (<=1.0) is the ratio of the lengths of minor and major axis.">
+				<Param name="x1" />
+				<Param name="y1" />
+				<Param name="x2" />
+				<Param name="y2" />
+				<Param name="aspectRatio" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="makeLine" func="yes">
+			<Overload retVal="" descr="Creates a new straight line selection. The origin (0,0) is assumed to be the upper left 
+corner of the image. Coordinates are in pixels. You can create
+segmented line selections by specifying more than two coordinate pairs, for example
+<i>makeLine(25,34,44,19,69,30,71,56)</i>. ">
+				<Param name="x1" />
+				<Param name="y1" />
+				<Param name="x2" />
+				<Param name="y2" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="makeLine" func="yes">
+			<Overload retVal="" descr="Creates a straight line selection with the specified width.
+See also: <a href=&quot;#getLine&quot;>getLine</a>.">
+				<Param name="x1" />
+				<Param name="y1" />
+				<Param name="x2" />
+				<Param name="y2" />
+				<Param name="lineWidth" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="makeOval" func="yes">
+			<Overload retVal="" descr="Creates an elliptical selection, where (<i>x,y</i>) define the upper left 
+corner of the bounding rectangle of the ellipse.">
+				<Param name="x" />
+				<Param name="y" />
+				<Param name="width" />
+				<Param name="height" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="makePoint" func="yes">
+			<Overload retVal="" descr="Creates a point selection at the specified location. Create
+a multi-point selection by using
+<i>makeSelection(&quot;point&quot;,xpoints,ypoints)</i>.  Use <i>setKeyDown(&quot;shift&quot;); makePoint(x, y);</i> to add a point
+to an existing point selection.">
+				<Param name="x" />
+				<Param name="y" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="makePolygon" func="yes">
+			<Overload retVal="" descr="Creates a polygonal selection. At least three coordinate pairs must be specified, 
+but not more than 200. As an example, <i>makePolygon(20,48,59,13,101,40,75,77,38,70)</i>
+creates a polygon selection with five sides.">
+				<Param name="x1" />
+				<Param name="y1" />
+				<Param name="x2" />
+				<Param name="y2" />
+				<Param name="x3" />
+				<Param name="y3" />
+				<Param name="..." />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="makeRectangle" func="yes">
+			<Overload retVal="" descr="Creates a rectangular selection. The <i>x</i> and <i>y</i> arguments are the coordinates 
+(in pixels) of the upper left corner of the selection. The origin (0,0) of the 
+coordinate system is the upper left corner of the image.">
+				<Param name="x" />
+				<Param name="y" />
+				<Param name="width" />
+				<Param name="height" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="makeRectangle" func="yes">
+			<Overload retVal="" descr="Creates a rounded rectangular selection using the specified corner arc size. ">
+				<Param name="x" />
+				<Param name="y" />
+				<Param name="width" />
+				<Param name="height" />
+				<Param name="arcSize" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="makeRotatedRectangle" func="yes">
+			<Overload retVal="" descr="Creates a rotated rectangular selection, which is similar to a wide line where
+(x1,y1) is the start of the line, (x2,y2) is the end of the line
+and 'width' is the line width.">
+				<Param name="x1" />
+				<Param name="y1" />
+				<Param name="x2" />
+				<Param name="y2" />
+				<Param name="width" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="makeSelection" func="yes">
+			<Overload retVal="" descr="Creates a selection from a list of XY coordinates. The first argument should be
+&quot;polygon&quot;, &quot;freehand&quot;, &quot;polyline&quot;, &quot;freeline&quot;, &quot;angle&quot; or &quot;point&quot;, or
+the numeric value returned by <a href=&quot;#selectionType&quot;>selectionType</a>.
+The <i>xcoord</i> and <i>ycoord</i> arguments
+are numeric arrays that contain the X and Y coordinates.
+See the <a href=&quot;../../macros/MakeSelectionDemo.txt&quot;>MakeSelectionDemo</a>
+macro for examples.">
+				<Param name="type" />
+				<Param name="xcoord" />
+				<Param name="ycoord" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="makeText" func="yes">
+			<Overload retVal="" descr="Creates a text selection at the specified coordinates.
+The selection will use the font and size specified by
+the last call to <a href=&quot;#setFont&quot;>setFont()</a>.
+The
+<a href=&quot;../../macros/examples/CreateOverlay.txt&quot;>CreateOverlay</a>
+macro provides an example.">
+				<Param name="string" />
+				<Param name="x" />
+				<Param name="y" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="matches" func="yes">
+			<Overload retVal="" descr="Returns <i>true</i> if <i>string</i> matches the specified 
+<a href=&quot;http://en.wikipedia.org/wiki/Regular_expression&quot;>regular expression</a>.
+See also: 
+<a href=&quot;#startsWith&quot;>startsWith</a>, 
+<a href=&quot;#endsWith&quot;>endsWith</a>, 
+<a href=&quot;#indexOf&quot;>indexOf</a>,
+<a href=&quot;#replace&quot;>replace</a>. ">
+				<Param name="string" />
+				<Param name="regex" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="maxOf" func="yes">
+			<Overload retVal="" descr="Returns the greater of two values.">
+				<Param name="n1" />
+				<Param name="n2" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="minOf" func="yes">
+			<Overload retVal="" descr="Returns the smaller of two values.">
+				<Param name="n1" />
+				<Param name="n2" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="moveTo" func="yes">
+			<Overload retVal="" descr="Sets the current drawing location. The origin is always assumed to be the upper 
+left corner of the image.">
+				<Param name="x" />
+				<Param name="y" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="
+<a name=newArray></a>
+<b>newArray(size)</b><br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="newArray" func="yes">
+			<Overload retVal="" descr="Returns a new array containing <i>size</i> elements.  
+You can also create arrays by listing the 
+elements, for example newArray(1,4,7) or newArray(&quot;a&quot;,&quot;b&quot;,&quot;c&quot;).
+For more examples, see the
+
+<a href=&quot;../../macros/Arrays.txt&quot;>Arrays</a> macro.">
+				<Param name="size" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="newImage" func="yes">
+			<Overload retVal="" descr="Opens a new image or stack using the name <i>title</i>.
+The string <i>type</i> should contain
+&quot;8-bit&quot;, &quot;16-bit&quot;, &quot;32-bit&quot; or &quot;RGB&quot;. In addition, it can contain &quot;white&quot;, &quot;black&quot; or &quot;ramp&quot; (the default is &quot;white&quot;).
+As an example, use &quot;16-bit ramp&quot; to create a 16-bit image containing a grayscale ramp.
+Precede with <i>call(&quot;ij.gui.ImageWindow.setNextLocation&quot;, x, y)</i>
+to set the location of the new image.
+<i>Width</i> and <i>height</i> specify the width and height of the image in pixels. 
+<i>Depth</i> specifies the number of stack slices.">
+				<Param name="title" />
+				<Param name="type" />
+				<Param name="width" />
+				<Param name="height" />
+				<Param name="depth" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="newMenu" func="yes">
+			<Overload retVal="" descr="Defines a menu that will be added to the toolbar when the menu tool
+named <i>macroName</i> is installed. Menu tools are macros with
+names ending in &quot;Menu Tool&quot;.
+<i>StringArray</i> is an array containing the menu commands.
+Returns a copy of <i>stringArray</i>. For an example, refer to the
+<a href=&quot;../../macros/toolsets/Toolbar%20Menus.txt&quot;>Toolbar Menus</a>
+toolset.">
+				<Param name="macroName" />
+				<Param name="stringArray" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Returns number of open images. The parentheses &quot;()&quot; are optional. ">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Returns the current measurement counter value. The parentheses &quot;()&quot; are optional.
+See also: <a href=&quot;#results-count&quot;>getValue(&quot;results.count&quot;)</a>.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Returns the number of images in the current stack. Returns 1 if the current image is not a stack.
+The parentheses &quot;()&quot; are optional.
+See also: 
+<a href=&quot;#getSliceNumber&quot;>getSliceNumber</a>,
+<a href=&quot;#getDimensions&quot;>getDimensions</a>.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="
+<a name=open></a>
+<b>open(path)</b><br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="open" func="yes">
+			<Overload retVal="" descr="Opens and displays a tiff, dicom, fits, pgm, jpeg, bmp, gif, lut, 
+roi, or text file. Displays an error message and aborts the macro
+if the specified file is not in one of the supported formats, 
+or if the file is not found. 
+Displays a file open dialog box if
+<i>path</i> is an empty string or if there is no argument.
+Use the <i>File&gt;Open</i> command with the command recorder running
+to generate calls to this function.
+With 1.41k or later, opens images specified by a URL, for example
+<i>open(&quot;../../images/clown.gif&quot;).</i>
+With 1.49v or later, opens a folder of images as a stack. Use
+open(&quot;path/to/folder&quot;,&quot;virtual&quot;) to open a folder of images
+as a virtual stack.">
+				<Param name="path" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="open" func="yes">
+			<Overload retVal="" descr="Opens the <i>n</i><small>th</small> image in the TIFF stack specified by <i>path</i>. For
+example, the first image in the stack is opened if <i>n</i>=1 and the tenth is opened if <i>n</i>=10.">
+				<Param name="path" />
+				<Param name="n" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Overlay.moveTo" func="yes">
+			<Overload retVal="" descr="Sets the current drawing location.">
+				<Param name="x" />
+				<Param name="y" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Overlay.lineTo" func="yes">
+			<Overload retVal="" descr="Draws a line from the current location to (<i>x,y</i>) .">
+				<Param name="x" />
+				<Param name="y" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Overlay.drawLine" func="yes">
+			<Overload retVal="" descr="Draws a line between (<i>x1,y1</i>) and (<i>x2,y2</i>)). ">
+				<Param name="x1" />
+				<Param name="y1" />
+				<Param name="x2" />
+				<Param name="y2" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Adds the drawing created by Overlay.lineTo(), Overlay.drawLine(), etc. to the
+overlay without updating the display.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Overlay.setPosition" func="yes">
+			<Overload retVal="" descr="Sets the stack position (slice number) of the last item added to the overlay
+(<a href=&quot;../../macros/examples/StackOverlay.txt&quot;>example</a>).">
+				<Param name="n" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Overlay.setPosition" func="yes">
+			<Overload retVal="" descr="Sets the hyperstack position (channel, slice, frame) of the last item added to the overlay.">
+				<Param name="c" />
+				<Param name="z" />
+				<Param name="t" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Overlay.drawRect" func="yes">
+			<Overload retVal="" descr="Draws a rectangle, where (<i>x,y</i>) specifies the upper left 
+corner.">
+				<Param name="x" />
+				<Param name="y" />
+				<Param name="width" />
+				<Param name="height" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Overlay.drawEllipse" func="yes">
+			<Overload retVal="" descr="Draws an ellipse, where (<i>x,y</i>) specifies the upper left 
+corner of the bounding rectangle.">
+				<Param name="x" />
+				<Param name="y" />
+				<Param name="width" />
+				<Param name="height" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Overlay.drawString" func="yes">
+			<Overload retVal="" descr="Draws text at the specified location and adds it to the overlay.
+Use <a href=&quot;#setFont&quot;>setFont()</a> to specify the font
+and <a href=&quot;#setColor&quot;>setColor</a> to set specify the color
+(<a href=&quot;../../macros/examples/OverlayDrawStringDemo.txt&quot;>example</a>).">
+				<Param name="&quot;text&quot;" />
+				<Param name="x" />
+				<Param name="y" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Overlay.drawString" func="yes">
+			<Overload retVal="" descr="Draws text at the specified location and angle and adds it to the overlay
+(<a href=&quot;../../macros/examples/RotatedText.txt&quot;>example</a>).">
+				<Param name="&quot;text&quot;" />
+				<Param name="x" />
+				<Param name="y" />
+				<Param name="angle" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Displays the current overlay.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Hides the current overlay.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Returns <i>true</i> if the active image has an overlay and it is hidden.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Removes the current overlay.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Resets the overlay without updating the display.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Returns the size (selection count) of the current overlay. Returns zero if the image does not have an overlay.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Adds the current selection to the overlay.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Overlay.addSelection" func="yes">
+			<Overload retVal="" descr="Sets the stroke color (&quot;red&quot;, &quot;green&quot;, &quot;ff8800&quot;, etc.) of the current selection
+and adds it to the overlay.">
+				<Param name="strokeColor" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Overlay.addSelection" func="yes">
+			<Overload retVal="" descr="Sets the stroke color (&quot;blue&quot;, &quot;yellow&quot;, &quot;ffaa77&quot; etc.) and stroke width of the 
+current selection and adds it to the overlay.">
+				<Param name="strokeColor" />
+				<Param name="strokeWidth" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Overlay.addSelection" func="yes">
+			<Overload retVal="" descr="Sets the fill color (&quot;red&quot;, &quot;green&quot;, etc.) of the current selection
+and adds it to the overlay.">
+				<Param name="&quot;&quot;" />
+				<Param name="0" />
+				<Param name="fillColor" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Overlay.activateSelection" func="yes">
+			<Overload retVal="" descr="Activates the specified overlay selection.">
+				<Param name="index" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Overlay.moveSelection" func="yes">
+			<Overload retVal="" descr="Moves the specified selection to the specified location.">
+				<Param name="index" />
+				<Param name="x" />
+				<Param name="y" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Overlay.removeSelection" func="yes">
+			<Overload retVal="" descr="Removes the specified selection from the overlay.">
+				<Param name="index" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Copies the overlay on the current image to the overlay clipboard.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Copies the overlay on the overlay clipboard to the current image.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Overlay.drawLabels" func="yes">
+			<Overload retVal="" descr="Enables/disables overlay labels.">
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Overlay.selectable" func="yes">
+			<Overload retVal="" descr="Prevents the selections in this overlay from being activated 
+by clicking on their labels or by long clicking.
+Requires 1.51r.">
+				<Param name="false" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Measures all the selections in the current overlay.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Creates a new RGB image that has the overlay rendered as pixel data.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="<a name=parseFloat></a>
+<b>parseFloat(string)</b><br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="parseFloat" func="yes">
+			<Overload retVal="" descr="Converts the string argument to a number and returns it. Returns NaN (Not a Number) if the
+string cannot be converted into a number. Use the
+<a HREF=&quot;#isNaN&quot;>isNaN()</a> function to test for NaN.
+For examples, see
+<a href=&quot;../../macros/ParseFloatIntExamples.txt&quot;>ParseFloatIntExamples</a>.">
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="parseInt" func="yes">
+			<Overload retVal="" descr="Converts <i>string</i> to an integer and returns it. Returns NaN if the
+string cannot be converted into a integer.
+">
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="parseInt" func="yes">
+			<Overload retVal="" descr="Converts <i>string</i> to an integer and returns it. 
+The optional second argument (<i>radix</i>) specifies the base of the number 
+contained in the string.
+The radix must be an integer between 2 and 36. For radixes above 10, 
+the letters of the alphabet indicate numerals greater than 9. Set <i>radix</i> to 16 to parse hexadecimal numbers.
+Returns NaN if the string cannot be converted into a integer. For examples, see
+<a href=&quot;../../macros/ParseFloatIntExamples.txt&quot;>ParseFloatIntExamples</a>.">
+				<Param name="string" />
+				<Param name="radix" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Returns the constant &pi; (3.14159265), the ratio of the circumference to the diameter of a circle.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.create" func="yes">
+			<Overload retVal="" descr="Generates a plot using the specified title, axis labels and X and Y coordinate arrays.
+If only one array is specified it is assumed to contain the Y values and a 0..n-1 sequence is used
+as the X values. It is also permissible to specify no arrays and use <i>Plot.setLimits()</i> and <i>Plot.add()</i> to generate the plot.
+Use <i>Plot.show()</i> to display the plot in a window, or it will be displayed automatically when
+the macro exits.">
+				<Param name="&quot;Title&quot;" />
+				<Param name="&quot;X-axis Label&quot;" />
+				<Param name="&quot;Y-axis Label&quot;" />
+				<Param name="xValues" />
+				<Param name="yValues" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.create" func="yes">
+			<Overload retVal="" descr="Draws category labels instead of x-axis numbers 0, 1, 2.
+Requires 1.49u.">
+				<Param name="&quot;Title&quot;" />
+				<Param name="&quot;{cat1" />
+				<Param name="cat2" />
+				<Param name="cat3}&quot;" />
+				<Param name="&quot;Y-axis Label&quot;" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.add" func="yes">
+			<Overload retVal="" descr="Adds a curve, set of points or error bars to a plot created using <i>Plot.create()</i>.
+If only one array is specified it is assumed to contain the Y values and a 0..n-1 sequence is used
+as the X values. The first argument (<i>type</i>) can be  &quot;line&quot;, filled&quot;, &quot;bars&quot;,
+&quot;circles&quot;, &quot;boxes&quot;, &quot;triangles&quot;, &quot;crosses&quot;, &quot;diamonds&quot;, &quot;dots&quot;,
+&quot;x&quot;, &quot;connected&quot;, &quot;error bars&quot; (in y direction) or &quot;xerror bars&quot;.
+In 1.49t or later, error bars apply to the last dataset provided by <i>Plot.create</i> or <i>Plot.add</i>.">
+				<Param name="type" />
+				<Param name="xValues" />
+				<Param name="yValues" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.drawVectors" func="yes">
+			<Overload retVal="" descr="Draws arrows from the starting to ending coordinates contained in the arrays.">
+				<Param name="xStarts" />
+				<Param name="yStarts" />
+				<Param name="xEnds" />
+				<Param name="yEnds" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.drawLine" func="yes">
+			<Overload retVal="" descr="Draws a line between <i>x1,y1</i> and <i>x2,y2</i>, using the coordinate system
+defined by <i>Plot.setLimits()</i>.">
+				<Param name="x1" />
+				<Param name="y1" />
+				<Param name="x2" />
+				<Param name="y2" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.drawNormalizedLine" func="yes">
+			<Overload retVal="" descr="Draws a line using a normalized 0-1, 0-1 coordinate system,
+with (0,0) at the top left and (1,1) at the lower right corner.">
+				<Param name="x1" />
+				<Param name="y1" />
+				<Param name="x2" />
+				<Param name="y2" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.addText" func="yes">
+			<Overload retVal="" descr="Adds text to the plot at the specified location, where (0,0)
+is the upper left corner of the the plot frame and (1,1) is the lower right corner. Call
+<i>Plot.setJustification()</i> to have the text centered or right justified.
+
+<a name=Plot.setLimits></a>
+<b>Plot.setLimits(xMin, xMax, yMin, yMax)</b><br>">
+				<Param name="&quot;A line of text&quot;" />
+				<Param name="x" />
+				<Param name="y" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.setLimits" func="yes">
+			<Overload retVal="" descr="Sets the range of the x-axis and y-axis of plots.
+With version 1.50g and later, when 'NaN' is used as a limit, the range
+is calculated automatically from the plots that 
+have been added so far.">
+				<Param name="xMin" />
+				<Param name="xMax" />
+				<Param name="yMin" />
+				<Param name="yMax" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.getLimits" func="yes">
+			<Overload retVal="" descr="Returns the current axis limits. Note that min&gt;max if the
+axis is reversed. Requires 1.49t.">
+				<Param name="xMin" />
+				<Param name="xMax" />
+				<Param name="yMin" />
+				<Param name="yMax" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.setLimitsToFit()" func="no">
+			<Overload retVal="" descr="Sets the range of the x and y axes to fit all data. Requires 1.49t.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.setColor" func="yes">
+			<Overload retVal="" descr="Specifies the color used in subsequent calls to <i>Plot.add()</i> or <i>Plot.addText()</i>. 
+The argument can be
+&quot;black&quot;, &quot;blue&quot;, &quot;cyan&quot;, &quot;darkGray&quot;, &quot;gray&quot;, &quot;green&quot;, &quot;lightGray&quot;, 
+&quot;magenta&quot;, &quot;orange&quot;, &quot;pink&quot;, &quot;red&quot;, &quot;white&quot;, &quot;yellow&quot;, or a hex value like &quot;#ff00ff&quot;.  
+Note that the curve specified in <i>Plot.create()</i> is drawn last.">
+				<Param name="color" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.setColor" func="yes">
+			<Overload retVal="" descr="This is a two argument version of Plot.setColor, where the second argument
+is used for filling symbols or as the line color for connected points.
+Requires 1.49t.">
+				<Param name="color1" />
+				<Param name="color2" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.setBackgroundColor" func="yes">
+			<Overload retVal="" descr="Sets the background color of the plot frame
+(<a href=&quot;../../macros/examples/PlotBackgroundColorDemo.txt&quot;>example</a>).
+Requires 1.49h.">
+				<Param name="color" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.setLineWidth" func="yes">
+			<Overload retVal="" descr="Specifies the width of the line used to draw a curve. Points (circle, box, etc.) are also drawn larger if a line width greater than one is specified. 
+Note that the curve specified in <i>Plot.create()</i>
+is the last one drawn before the plot is dispayed or updated.">
+				<Param name="width" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.setJustification(&quot;center&quot;)" func="no">
+			<Overload retVal="" descr="Specifies the justification used by <i>Plot.addText()</i>.
+The argument can be &quot;left&quot;, &quot;right&quot; or &quot;center&quot;. The default is &quot;left&quot;.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.setLegend" func="yes">
+			<Overload retVal="" descr="Creates a legend for each of the data sets added with <i>Plot.create</i>
+and <i>Plot.add</i>. In the first argument, the labels for the data sets should be
+separated with tab or newline characters. The optional second argument can contain
+the legend position (&quot;top-left&quot;, &quot;top-right&quot;, &quot;bottom-left&quot;, &quot;bottom-right&quot;;
+default is automatic positioning), &quot;bottom-to-top&quot; for reversed sequence of the labels,
+and &quot;transparent&quot; to make the legend background transparent.
+Requires 1.49t.">
+				<Param name="&quot;label1\tlabel2...&quot;" />
+				<Param name="&quot;options&quot;" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.setFrameSize" func="yes">
+			<Overload retVal="" descr="Sets the plot frame size in pixels, overriding the default size
+defined in the <i>Edit&gt;Options&gt;Profile Plot Options</i> dialog box.">
+				<Param name="width" />
+				<Param name="height" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.getFrameBounds" func="yes">
+			<Overload retVal="" descr="Returns the plot frame bounds.">
+				<Param name="x" />
+				<Param name="y" />
+				<Param name="width" />
+				<Param name="height" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.setLogScaleX" func="yes">
+			<Overload retVal="" descr="Sets the x axis scale to Logarithmic, or back to linear if the optional boolean argument is false.
+In versions up to 1.49s, it must be called immediately after <i>Plot.create</i> and
+before <i>Plot.setLimits</i>.
+See the <a href=&quot;../../macros/examples/LogLogPlot.txt&quot;>LogLogPlot</a>
+macro for an example.">
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.setLogScaleY" func="yes">
+			<Overload retVal="" descr="Sets the y axis scale to Logarithmic, or back to linear if the optional boolean argument is false.">
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.setXYLabels" func="yes">
+			<Overload retVal="" descr="Sets the axis labels.
+Requires 1.49t.">
+				<Param name="&quot;x Label&quot;" />
+				<Param name="&quot;y Label&quot;" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.setFontSize" func="yes">
+			<Overload retVal="" descr="Sets the default font size in the plot (otherwise specified in <i>Profile Plot Options</i>),
+used e.g. for axes labels. Can be also called prior to <i>Plot.addText</i>.
+The optional second argument can include &quot;bold&quot; and/or &quot;italic&quot;.
+Requires 1.49t.">
+				<Param name="size" />
+				<Param name="&quot;options&quot;" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.setAxisLabelSize" func="yes">
+			<Overload retVal="" descr="Sets the fort size of the axis labels. The optional second argument
+can include &quot;bold&quot; and/or &quot;italic&quot;.
+Requires 1.49t.
+
+<a name=Plot.setFormatFlags></a>
+<b>Plot.setFormatFlags(&quot;11001100001111&quot;)</b><br>">
+				<Param name="size" />
+				<Param name="&quot;options&quot;" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.setFormatFlags(&quot;11001100001111&quot;)" func="no">
+			<Overload retVal="" descr="Controls whether to draw axes labels, grid lines and ticks
+(major/minor/ticks for log axes). Use the macro recorder and
+<i>More&gt;&gt;Axis Options</i> in any plot window to determine the binary code.
+Requires 1.49t.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.useTemplate(&quot;plot name&quot; id)" func="no">
+			<Overload retVal="" descr="Transfers the formatting of an open plot window to the current plot.
+Requires 1.49t.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.makeHighResolution" func="yes">
+			<Overload retVal="" descr="Creates a high-resolution image of the plot enlarged by
+<i>factor</i>. Add the second argument &quot;disable&quot; to
+avoid antialiased text.
+Requires 1.49t.
+
+<a name=Plot.show></a>
+<b>Plot.show()</b><br>">
+				<Param name="factor" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.show()" func="no">
+			<Overload retVal="" descr="Displays the plot generated by <i>Plot.create()</i>, <i>Plot.add()</i>, etc. in a window. 
+This function is automatically called when a macro exits.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.update()" func="no">
+			<Overload retVal="" descr="Draws the plot generated by <i>Plot.create()</i>, <i>Plot.add()</i>, etc. in an existing plot window. 
+Equivalent to <i>Plot.show</i> if no plot window is open.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.getValues" func="yes">
+			<Overload retVal="" descr="Returns the values displayed by clicking on &quot;List&quot; in a plot or histogram window
+(<a href=&quot;../../macros/examples/PlotGetValuesDemo.txt&quot;>example</a>).">
+				<Param name="xpoints" />
+				<Param name="ypoints" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.showValues()" func="no">
+			<Overload retVal="" descr="Displays the plot values in the Results window. Must be
+preceded by <i>Plot.show</i>.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.drawGrid()" func="no">
+			<Overload retVal="" descr="Redraws the grid above previous plots.
+Requires 1.49u.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.drawShapes" func="yes">
+			<Overload retVal="" descr="Draws one or more rectangles. The four arguments (values or arrays) hold rectangle coordinates.
+Requires 1.49u.">
+				<Param name="&quot;rectangles&quot;" />
+				<Param name="lefts" />
+				<Param name="tops" />
+				<Param name="rights" />
+				<Param name="bottoms" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Plot.drawBoxes" func="yes">
+			<Overload retVal="" descr="Draws a boxplot, where 'width' is in pixels, array 'x' holds x-positions 
+and arrays 'y1'..'y5' hold the quartile borders in ascending order.
+Secondary color will fill the box. For horizontal boxes,
+use  &quot;boxesx width=30&quot; instead.
+Requires 1.49u.">
+				<Param name="&quot;boxes width=30&quot;" />
+				<Param name="x" />
+				<Param name="y1" />
+				<Param name="y2" />
+				<Param name="y3" />
+				<Param name="y4" />
+				<Param name="y5" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="pow" func="yes">
+			<Overload retVal="" descr="Returns the value of <i>base</i> raised to the power of <i>exponent</i>.">
+				<Param name="base" />
+				<Param name="exponent" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="print" func="yes">
+			<Overload retVal="" descr="Outputs a string to the &quot;Log&quot; window. Numeric arguments are automatically converted to strings.
+The print() function accepts multiple arguments. For example, you can use
+<i>print(x,y,width, height)</i> instead of <i>print(x+&quot; &quot;+y+&quot; &quot;+width+&quot; &quot;+height)</i>.
+If the first argument is a file handle returned by <a href=&quot;#File.open&quot;>File.open(path)</a>, then the second 
+is saved in the refered file
+(see <a href=&quot;../../macros/SaveTextFileDemo.txt&quot;>SaveTextFileDemo</a>).">
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr=" 
+<a name=random></a>
+<b>random</b><br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Returns a random number between 0 and 1.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="random" func="yes">
+			<Overload retVal="" descr="Sets the seed (a whole number) used by the <i>random()</i> function.">
+				<Param name="&quot;seed&quot;" />
+				<Param name="seed" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="rename" func="yes">
+			<Overload retVal="" descr="Changes the title of the active image to the string <i>name</i>.">
+				<Param name="name" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="replace" func="yes">
+			<Overload retVal="" descr="Returns the new string that results from replacing all occurrences of
+<i>old</i> in <i>string</i> with <i>new</i>, where <i>old</i> and <i>new</i> 
+are single character strings. If <i>old</i> or <i>new</i> are longer than
+one character, each substring of 
+<i>string</i> that matches the 
+<a href=&quot;http://en.wikipedia.org/wiki/Regular_expression&quot;>regular expression</a>
+<i>old</i> is replaced with <i>new</i>. 
+When doing a simple string replacement, and <i>old</i> contains
+regular expression metacharacters ('.', '[', ']', '^', '$', etc.), you must escape
+them with a &quot;\\&quot;. For example, to replace &quot;[xx]&quot; with &quot;yy&quot;, use
+<i>string=replace(string,&quot;\\[xx\\]&quot;,&quot;yy&quot;)</i>.
+See also:
+<a href=&quot;#matches&quot;>matches</a>. ">
+				<Param name="string" />
+				<Param name="old" />
+				<Param name="new" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="requires(&quot;1.29p&quot;)" func="no">
+			<Overload retVal="" descr="Display a message and aborts the macro if the ImageJ version is less than the one specified.
+See also: 
+<a href=&quot;#getVersion&quot;>getVersion</a>.
+">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Restores the backup image created by the
+<a href=&quot;#snapshot&quot;>snapshot</a> function.
+Note that reset() and run(&quot;Undo&quot;) are basically the same, so
+only one run() call can be reset.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="With 16-bit and 32-bit images, resets the minimum and maximum displayed pixel values (display range)
+to be the same as the current image's minimum and maximum pixel values.
+With 8-bit images, sets the display range to 0-255.
+With RGB images, does nothing.
+See the
+<a href=&quot;../../macros/DisplayRangeMacros.txt&quot;>DisplayRangeMacros</a>
+for examples.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Disables thresholding.
+See also: 
+<a href=&quot;#setThreshold&quot;>setThreshold</a>, 
+<a href=&quot;#setAutoThreshold&quot;>setAutoThreshold</a>, 
+<a href=&quot;#getThreshold&quot;>getThreshold</a>.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Restores <i>Edit&gt;Options</i> submenu settings saved by 
+the <a href=&quot;#saveSettings&quot;>saveSettings</a> function.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Roi.contains" func="yes">
+			<Overload retVal="" descr="Returns &quot;1&quot; if the point <i>x,y</i> is inside the current selection or &quot;0&quot; if it is not.
+Aborts the macro if there is no selection. Requires 1.49h. See also: 
+<a href=&quot;#selectionContains&quot;>selectionContains</a>.">
+				<Param name="x" />
+				<Param name="y" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Roi.getBounds" func="yes">
+			<Overload retVal="" descr="Returns the location and size of the selection's bounding rectangle.">
+				<Param name="x" />
+				<Param name="y" />
+				<Param name="width" />
+				<Param name="height" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Roi.getCoordinates" func="yes">
+			<Overload retVal="" descr="Returns, as two arrays, the x and y coordinates that define this selection.">
+				<Param name="xpoints" />
+				<Param name="ypoints" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Returns the current default selection color.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Returns the selection stroke color.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Returns the selection fill color.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Returns the selection name or an empty string if the selection does not have a name.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Roi.getProperty" func="yes">
+			<Overload retVal="" descr="Returns the value (a string) associated with the specified key
+or an empty string if the key is not found. ">
+				<Param name="key" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Roi.setProperty" func="yes">
+			<Overload retVal="" descr="Adds the specified key and value pair to the selection properties. Assumes
+a value of &quot;1&quot; (true) if there is only one argument.">
+				<Param name="key" />
+				<Param name="value" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Returns all selection properties or an empty string
+if the selection does not have properties.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Roi.getSplineAnchors" func="yes">
+			<Overload retVal="" descr="Returns the x and y coordinates of the anchor points of a spline fitted selection
+(<a href=&quot;../../macros/examples/GetSetAnchors.txt&quot;>example</a>).">
+				<Param name="x" />
+				<Param name="y" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Roi.setPolygonSplineAnchors" func="yes">
+			<Overload retVal="" descr="Creates or updates a spline fitted polygon selection
+(<a href=&quot;../../macros/examples/GetSetAnchors.txt&quot;>example</a>).">
+				<Param name="x" />
+				<Param name="y" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Roi.setPolylineSplineAnchors" func="yes">
+			<Overload retVal="" descr="Creates or updates a spline fitted polyline selection
+(<a href=&quot;../../macros/examples/GetSetAnchors.txt&quot;>example</a>).">
+				<Param name="x" />
+				<Param name="y" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Returns, as a string, the type of the current selection.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Roi.move" func="yes">
+			<Overload retVal="" descr="Moves the selection to the specified location.">
+				<Param name="x" />
+				<Param name="y" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Roi.setStrokeColor" func="yes">
+			<Overload retVal="" descr="Sets the selection stroke color (&quot;red&quot;, &quot;5500ff00&quot;. etc.).">
+				<Param name="color" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Roi.setStrokeColor" func="yes">
+			<Overload retVal="" descr="Sets the selection stroke color, where 'red', 'green'
+and 'blue' are integers (0-255).">
+				<Param name="red" />
+				<Param name="green" />
+				<Param name="blue" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Roi.setStrokeColor" func="yes">
+			<Overload retVal="" descr="Sets the selection stroke color, where 'rgb' is an integer.">
+				<Param name="rgb" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Roi.setFillColor" func="yes">
+			<Overload retVal="" descr="Sets the selection fill color (&quot;red&quot;, &quot;5500ff00&quot;. etc.).">
+				<Param name="color" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Roi.setFillColor" func="yes">
+			<Overload retVal="" descr="Sets the selection fill color, where 'red', 'green'
+and 'blue' are integers (0-255).">
+				<Param name="red" />
+				<Param name="green" />
+				<Param name="blue" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Roi.setFillColor" func="yes">
+			<Overload retVal="" descr="Sets the selection fill color, where 'rgb' is an integer.">
+				<Param name="rgb" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Roi.setName" func="yes">
+			<Overload retVal="" descr="Sets the selection name.">
+				<Param name="name" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Roi.setStrokeWidth" func="yes">
+			<Overload retVal="" descr="Sets the selection stroke width.">
+				<Param name="width" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Deletes the selection, if any, from the active image.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roiManager(&quot;and&quot;)" func="no">
+			<Overload retVal="" descr="Uses the conjunction operator on the selected ROIs, or all ROIs if none are selected,
+to create a composite selection.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roiManager(&quot;add&quot;)" func="no">
+			<Overload retVal="" descr="Adds the current selection to the ROI Manager.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roiManager(&quot;add & draw&quot;)" func="no">
+			<Overload retVal="" descr="Outlines the current selection and adds it to the ROI Manager.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roiManager(&quot;combine&quot;)" func="no">
+			<Overload retVal="" descr="Uses the union operator on the selected ROIs to create a composite
+selection. Combines all ROIs if none are selected.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roiManager(&quot;count&quot;)" func="no">
+			<Overload retVal="" descr="Returns the number of ROIs in the ROI Manager list.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roiManager(&quot;delete&quot;)" func="no">
+			<Overload retVal="" descr="Deletes the selected ROIs from the list, or deletes all ROIs if none are selected.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roiManager(&quot;deselect&quot;)" func="no">
+			<Overload retVal="" descr="Deselects all ROIs in the list. When ROIs are deselected,
+subsequent ROI Manager commands are applied to all ROIs.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roiManager(&quot;draw&quot;)" func="no">
+			<Overload retVal="" descr="Draws the selected ROIs, or all ROIs if none are selected, using
+the equivalent of the <i>Edit&gt;Draw</i> command.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roiManager(&quot;fill&quot;)" func="no">
+			<Overload retVal="" descr="Fills the selected ROIs, or all ROIs if none are selected, using
+the equivalent of the <i>Edit&gt;Fill</i> command.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roiManager(&quot;index&quot;)" func="no">
+			<Overload retVal="" descr="Returns the index of the currently selected ROI on the list, or
+-1 if the list is empty or no ROIs are selected. Returns the index of the first
+selected ROI if more than one is selected">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roiManager(&quot;measure&quot;)" func="no">
+			<Overload retVal="" descr="Measures the selected ROIs, or if none is selected, all ROIs on the list.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roiManager(&quot;multi measure&quot;)" func="no">
+			<Overload retVal="" descr="Measures all the ROIs on all slices in the stack, creating a Results Table
+with one row per slice.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roiManager(&quot;multi-measure append&quot;)" func="no">
+			<Overload retVal="" descr="Measures all the ROIs on all slices in the stack, appending the measurements
+to the Results Table, with one row per slice.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roiManager(&quot;multi-measure one&quot;)" func="no">
+			<Overload retVal="" descr="Measures all the ROIs on all slices in the stack, creating a Results Table with
+one row per measurement.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roiManager(&quot;multi plot&quot;)" func="no">
+			<Overload retVal="" descr="">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roiManager" func="yes">
+			<Overload retVal="" descr="Opens a .roi file and adds it to the list or opens a ZIP archive (.zip file) and">
+				<Param name="&quot;open&quot;" />
+				<Param name="file-path" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roiManager(&quot;remove slice info&quot;)" func="no">
+			<Overload retVal="" descr="">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roiManager" func="yes">
+			<Overload retVal="" descr="Renames the selected ROI.
+You can get the name of an ROI on the list
+using <i>call(&quot;ij.plugin.frame.RoiManager.getName&quot;, index)</i>.">
+				<Param name="&quot;rename&quot;" />
+				<Param name="name" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roiManager(&quot;reset&quot;)" func="no">
+			<Overload retVal="" descr="">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roiManager" func="yes">
+			<Overload retVal="" descr="Saves all the ROIs on the list in a ZIP archive.">
+				<Param name="&quot;save&quot;" />
+				<Param name="file-path" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roiManager" func="yes">
+			<Overload retVal="" descr="Saves the selected ROI as a .roi file.">
+				<Param name="&quot;save selected&quot;" />
+				<Param name="file-path" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roiManager" func="yes">
+			<Overload retVal="" descr="Selects an item in the ROI Manager list, where
+<i>index</i> must be greater than or equal zero and less than the
+value returned by <i>roiManager(&quot;count&quot;)</i>. Note that macros that
+use this function sometimes run orders of magnitude faster in batch mode.
+Use <i>roiManager(&quot;deselect&quot;) </i> to deselect all items on the list.
+For an example, refer to the
+<a href=&quot;../../macros/ROI_Manager_Stack_Demo.txt&quot;>ROI Manager Stack Demo</a> macro.">
+				<Param name="&quot;select&quot;" />
+				<Param name="index" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roiManager" func="yes">
+			<Overload retVal="" descr="Selects multiple items in the ROI Manager list, where
+<i>indexes</i> is an array of integers, each of which must be greater
+than or equal to 0 and less than the value returned by <i>roiManager(&quot;count&quot;)</i>.
+The selected ROIs are not highlighted in the ROI Manager list and
+are no longer selected after the next ROI Manager command is executed.">
+				<Param name="&quot;select&quot;" />
+				<Param name="indexes" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roiManager(&quot;show all&quot;)" func="no">
+			<Overload retVal="" descr="">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roiManager(&quot;show all with labels&quot;)" func="no">
+			<Overload retVal="" descr="">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roiManager(&quot;show all without labels&quot;)" func="no">
+			<Overload retVal="" descr="">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roiManager(&quot;show none&quot;)" func="no">
+			<Overload retVal="" descr="">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roiManager(&quot;sort&quot;)" func="no">
+			<Overload retVal="" descr="">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roiManager(&quot;split&quot;)" func="no">
+			<Overload retVal="" descr="Splits the current selection (it must be a composite selection) into its">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="roiManager(&quot;update&quot;)" func="no">
+			<Overload retVal="" descr="">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="round" func="yes">
+			<Overload retVal="" descr="Returns the closest integer to <i>n</i>.
+See also: 
+<a href=&quot;#floor&quot;>floor</a>. ">
+				<Param name="n" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="run" func="yes">
+			<Overload retVal="" descr="Executes an ImageJ menu command. The optional second argument contains values that 
+are automatically entered into dialog boxes (must be GenericDialog or OpenDialog). Use
+the Command Recorder (<i>Plugins&gt;Macros&gt;Record</i>) to generate run() function calls.
+Use string concatentation to pass a variable as an argument. With ImageJ 1.43 and later,
+variables can be passed without using string concatenation by adding &quot;&&quot; to the variable name.
+For examples, see the
+<a href=&quot;../../macros/ArgumentPassingDemo.txt&quot;>ArgumentPassingDemo</a> macro.">
+				<Param name="&quot;command&quot;[" />
+				<Param name="&quot;options&quot;]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="runMacro" func="yes">
+			<Overload retVal="" descr="Runs the specified macro or script, which is assumed to be in the
+Image macros folder. A full file path may also be used.
+Returns any string argument returned by the macro or the last
+expression evaluated in the script.
+For an example, see the
+<a href=&quot;../../macros/CalculateMean.txt&quot;>CalculateMean</a> macro.
+See also: <a href=&quot;#eval&quot;>eval</a>.">
+				<Param name="name" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="runMacro" func="yes">
+			<Overload retVal="" descr="Runs the specified macro or script, which is assumed to be in the
+macros folder, or use a full file path. The string argument 'arg' can be retrieved by the
+macro or script using the getArgument() function. Returns the string argument
+returned by the macro or the last expression evaluated in the script. 
+See also: <a href=&quot;#getArgument&quot;>getArgument</a>.">
+				<Param name="name" />
+				<Param name="arg" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="
+<a name=save></a>
+<b>save(path)</b><br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="save" func="yes">
+			<Overload retVal="" descr="Saves an image, lookup table, selection or text window to the specified file path.  The path must end in 
+&quot;.tif&quot;, &quot;.jpg&quot;, &quot;.gif&quot;, &quot;.zip&quot;, &quot;.raw&quot;, &quot;.avi&quot;, &quot;.bmp&quot;, &quot;.fits&quot;, &quot;.png&quot;, &quot;.pgm&quot;, &quot;.lut&quot;, &quot;.roi&quot; or &quot;.txt&quot;.">
+				<Param name="path" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="saveAs" func="yes">
+			<Overload retVal="" descr="Saves the active image, lookup table, selection, measurement results, selection XY coordinates 
+or text window  to the specified file path.  The <i>format</i> argument
+must be &quot;tiff&quot;, &quot;jpeg&quot;, &quot;gif&quot;, &quot;zip&quot;, &quot;raw&quot;, &quot;avi&quot;, &quot;bmp&quot;, &quot;fits&quot;, &quot;png&quot;, &quot;pgm&quot;, &quot;text image&quot;, &quot;lut&quot;, &quot;selection&quot;,
+&quot;results&quot;, &quot;xy Coordinates&quot; or &quot;text&quot;. Use <i>saveAs(format)</i> to
+have a &quot;Save As&quot; dialog displayed.">
+				<Param name="format" />
+				<Param name="path" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="saveSettings()" func="no">
+			<Overload retVal="" descr="Saves most <i>Edit&gt;Options</i> submenu settings so they can be 
+restored later by calling <a href=&quot;#restoreSettings&quot;>restoreSettings</a>.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Returns the screen height in pixels. 
+See also: 
+<a href=&quot;#getLocationAndSize&quot;>getLocationAndSize</a>,
+<a href=&quot;#setLocation&quot;>setLocation</a>.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Returns the screen width in pixels. ">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="selectionContains" func="yes">
+			<Overload retVal="" descr="Returns <i>true</i> if the point <i>x,y</i> is inside the current selection.
+Aborts the macro if there is no selection.">
+				<Param name="x" />
+				<Param name="y" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Returns the name of the current selection, or an empty string 
+if the selection does not have a name.
+Aborts the macro if there is no selection.
+See also:
+<a href=&quot;#setSelectionName&quot;>setSelectionName</a> and
+<a href=&quot;#selectionType&quot;>selectionType</a>. ">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="selectionType() " func="no">
+			<Overload retVal="" descr="Returns the selection type, where 0=rectangle, 1=oval, 2=polygon, 3=freehand, 4=traced, 
+5=straight line, 6=segmented line, 7=freehand line, 8=angle, 9=composite and 10=point. 
+Returns -1 if there is no selection. For an example, see the
+<a href=&quot;../../macros/ShowImageInfo.txt&quot;>ShowImageInfo</a> macro.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="selectImage" func="yes">
+			<Overload retVal="" descr="Activates the image with the specified ID (a negative number). If <i>id</i> is greater than zero, 
+activates the <i>id</i>th image listed in the Window menu. The <i>id</i>
+can also be an image title (a string). ">
+				<Param name="id" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="selectWindow(&quot;name&quot;)" func="no">
+			<Overload retVal="" descr="Activates the window with the title &quot;name&quot;.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setAutoThreshold()" func="no">
+			<Overload retVal="" descr="Uses the &quot;Default&quot; method
+to determine the threshold. It may select dark or bright areas as
+thresholded, as was the case with the <i>Image&gt;Adjust&gt;Threshold</i> &quot;Auto&quot;
+option in ImageJ 1.42o and earlier.
+See also: 
+<a href=&quot;#setThreshold&quot;>setThreshold</a>, 
+<a href=&quot;#getThreshold&quot;>getThreshold</a>, 
+<a href=&quot;#resetThreshold&quot;>resetThreshold</a>. ">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setAutoThreshold" func="yes">
+			<Overload retVal="" descr="Uses the specified method to set the threshold levels of  the current
+image. Use the getList(&quot;threshold.methods&quot;) function to get a list of
+the available methods. Concatenate &quot; dark&quot; to the method name if the image
+has a dark background. For an example, see the 
+<a href=&quot;../../macros/examples/AutoThresholdingDemo.txt&quot;>AutoThresholdingDemo</a>
+macro.">
+				<Param name="method" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setBackgroundColor" func="yes">
+			<Overload retVal="" descr="Sets the background color, where <i>r</i>, <i>g</i>, and <i>b</i> are &gt;= 0 and &lt;= 255.
+See also:
+<a href=&quot;#setForegroundColor&quot;>setForegroundColor</a>.">
+				<Param name="r" />
+				<Param name="g" />
+				<Param name="b" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setBackgroundColor" func="yes">
+			<Overload retVal="" descr="Sets the background color, where <i>rgb</i> is an RGB pixel value.
+See also:
+<a href=&quot;#get-background&quot;>getValue(&quot;rgb.background&quot;)</a>.">
+				<Param name="rgb" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setBatchMode" func="yes">
+			<Overload retVal="" descr="Controls whether images are visible or hidden during macro execution.
+If <i>arg</i> is 'true', the interpreter enters batch mode and newly opened
+images are not displayed. If <i>arg</i> is 'false', exits batch mode and disposes 
+of all hidden images except for the active image, which is displayed in a window.
+The interpreter also exits batch mode when the macro terminates, disposing of all
+hidden images.">
+				<Param name="arg" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setBatchMode(&quot;exit and display&quot;)" func="no">
+			<Overload retVal="" descr="Exits batch mode and displays all hidden images.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setBatchMode(&quot;show&quot;)" func="no">
+			<Overload retVal="" descr="Displays the active hidden image, while batch mode remains in same state.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setBatchMode(&quot;hide&quot;)" func="no">
+			<Overload retVal="" descr="Enters (or remains in) batch mode and hides the active image">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setColor" func="yes">
+			<Overload retVal="" descr="Sets the drawing color, where <i>r</i>, <i>g</i>, and <i>b</i> are &gt;= 0 and &lt;= 255.
+With 16 and 32 bit images, sets the color to 0 if r=g=b=0. With 16 and 32 bit images, 
+use <i>setColor(1,0,0)</i> to make the drawing color the same is the minimum 
+displayed pixel value.
+SetColor() is faster than 
+<a href=&quot;#setForegroundColor&quot;>setForegroundColor()</a>, and it does not change
+ the system wide foreground color or repaint the color picker tool icon, but it cannot be
+used to specify the color used by commands called from macros, for example <i>run(&quot;Fill&quot;)</i>.">
+				<Param name="r" />
+				<Param name="g" />
+				<Param name="b" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setColor" func="yes">
+			<Overload retVal="" descr="Sets the drawing color. For 8 bit images, 0&lt;=<i>value</i>&lt;=255.
+For 16 bit images, 0&lt;=<i>value</i>&lt;=65535. For RGB images, use hex 
+constants (e.g., 0xff0000 for red). This function does not change the foreground color used
+by <i>run(&quot;Draw&quot;)</i> and <i>run(&quot;Fill&quot;)</i>.">
+				<Param name="value" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setColor" func="yes">
+			<Overload retVal="" descr="Sets the drawing color, where 'string' can be 
+&quot;black&quot;, &quot;blue&quot;, &quot;cyan&quot;, &quot;darkGray&quot;, &quot;gray&quot;, &quot;green&quot;, &quot;lightGray&quot;, 
+&quot;magenta&quot;, &quot;orange&quot;, &quot;pink&quot;, &quot;red&quot;, &quot;white&quot;, &quot;yellow&quot;, or a hex value like &quot;#ff0000&quot;.  ">
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setFont" func="yes">
+			<Overload retVal="" descr="Sets the font used by the <a href=&quot;#drawString&quot;>drawString</a> function.
+The first argument is the font name. It should be &quot;SansSerif&quot;, &quot;Serif&quot; or &quot;Monospaced&quot;.
+The second is the point size. The optional third argument is a
+string containing &quot;bold&quot; or &quot;italic&quot;, or both. The third argument
+can also contain the keyword &quot;antialiased&quot;.
+For examples, run the
+<a href=&quot;../../macros/TextDemo.txt&quot;>TextDemo</a> macro.">
+				<Param name="name" />
+				<Param name="size[" />
+				<Param name="style]" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setFont(&quot;user&quot;)" func="no">
+			<Overload retVal="" descr="Sets the font to the one defined in the <i>Edit&gt;Options&gt;Fonts</i> window.
+See also: 
+<a href=&quot;#font-name&quot;>getInfo(&quot;font.name&quot;)</a>,
+<a href=&quot;#font-size&quot;>getValue(&quot;font.size&quot;)</a> and
+<a href=&quot;#font-height&quot;>getValue(&quot;font.height&quot;)</a>.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setForegroundColor" func="yes">
+			<Overload retVal="" descr="Sets the foreground color, where <i>r</i>, <i>g</i>, and <i>b</i> are &gt;= 0 and &lt;= 255.
+See also: 
+<a href=&quot;#setColor&quot;>setColor</a> and
+<a href=&quot;#setBackgroundColor&quot;>setBackgroundColor</a>.">
+				<Param name="r" />
+				<Param name="g" />
+				<Param name="b" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setForegroundColor" func="yes">
+			<Overload retVal="" descr="Sets the foreground color, where <i>rgb</i> is an RGB pixel value.
+See also: 
+<a href=&quot;#get-foreground&quot;>getValue(&quot;rgb.foreground&quot;)</a>.">
+				<Param name="rgb" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setJustification(&quot;center&quot;)" func="no">
+			<Overload retVal="" descr="Specifies the justification used by <i>drawString()</i> and <i>Plot.addText()</i>.
+The argument can be &quot;left&quot;, &quot;right&quot; or &quot;center&quot;. The default is &quot;left&quot;.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setKeyDown" func="yes">
+			<Overload retVal="" descr="Simulates pressing the shift, alt or space keys, where
+<i>keys</i> is a string containing some combination of &quot;shift&quot;, &quot;alt&quot; or &quot;space&quot;.
+Any key not specified is set &quot;up&quot;. Use <i>setKeyDown(&quot;none&quot;)</i> to set all keys in the
+&quot;up&quot; position. Call <i>setKeyDown(&quot;esc&quot;)</i> to abort the currently
+running macro or plugin.
+For examples, see the
+<a href=&quot;../../macros/CompositeSelections.txt&quot;>CompositeSelections</a>,
+<a href=&quot;../../macros/DoWandDemo.txt&quot;>DoWandDemo</a> and
+<a href=&quot;../../macros/tools/AbortMacroActionTool.txt&quot;>AbortMacroActionTool</a> macros.
+See also: 
+<a href=&quot;#isKeyDown&quot;>isKeyDown</a>.">
+				<Param name="keys" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setLineWidth" func="yes">
+			<Overload retVal="" descr="Specifies the line width (in pixels) used by drawLine(), lineTo(), drawRect() and drawOval().
+">
+				<Param name="width" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setLocation" func="yes">
+			<Overload retVal="" descr="Moves the active window to a new location. Use
+ <i>call(&quot;ij.gui.ImageWindow.setNextLocation&quot;, x, y)</i>
+ to set the location of the next opened window.
+See also: 
+<a href=&quot;#getLocationAndSize&quot;>getLocationAndSize</a>,
+<a href=&quot;#screenWidth&quot;>screenWidth</a>,
+<a href=&quot;#screenHeight&quot;>screenHeight</a>. ">
+				<Param name="x" />
+				<Param name="y" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setLocation" func="yes">
+			<Overload retVal="" descr="Moves and resizes the active image window. The new location of the top-left
+corner is specified by <i>x</i> and <i>y</i>, and the
+new size by <i>width</i> and <i>height</i>.">
+				<Param name="x" />
+				<Param name="y" />
+				<Param name="width" />
+				<Param name="height" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setLut" func="yes">
+			<Overload retVal="" descr="Creates a new lookup table and assigns it to the current image. Three input arrays are 
+required, each containing 256 intensity values. See the
+
+<a href=&quot;../../macros/LookupTables.txt&quot;>LookupTables</a>
+macros for examples.">
+				<Param name="reds" />
+				<Param name="greens" />
+				<Param name="blues" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setMetadata" func="yes">
+			<Overload retVal="" descr="Assigns the metadata in <i>string</i> to the &quot;Info&quot;
+image property of the current image.
+This metadata is displayed by <i>Image&gt;Show Info</i> and
+saved as part of the TIFF header.
+See also: <a href=&quot;#getMetadata&quot;>getMetadata</a>. ">
+				<Param name="&quot;Info&quot;" />
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setMetadata" func="yes">
+			<Overload retVal="" descr="Sets <i>string</i> as the label of the current image or stack slice.
+The first 60 characters, or up to the first newline, 
+of the label are displayed as part of the image subtitle.
+The labels are saved as part of the TIFF header.
+See also: <a href=&quot;#getMetadata&quot;>getMetadata</a>. ">
+				<Param name="&quot;Label&quot;" />
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setMinAndMax" func="yes">
+			<Overload retVal="" descr="Sets the minimum and maximum displayed pixel values (display range).
+See the
+<a href=&quot;../../macros/DisplayRangeMacros.txt&quot;>DisplayRangeMacros</a>
+for examples.">
+				<Param name="min" />
+				<Param name="max" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setMinAndMax" func="yes">
+			<Overload retVal="" descr="Sets the display range of specified channels in an RGB image,
+where 4=red, 2=green, 1=blue, 6=red+green, etc.
+Note that the pixel data is altered since RGB images, unlike
+<a href=&quot;../../docs/menus/image.html#make-composite&quot;>composite color images</a>,
+do not have a LUT for each channel.">
+				<Param name="min" />
+				<Param name="max" />
+				<Param name="channels" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setOption" func="yes">
+			<Overload retVal="" descr="Enables or disables an ImageJ option, where <i>option</i> is one of the following options
+and <i>boolean</i> is either <i>true</i> or <i>false</i>.
+ <blockquote>
+<i>&quot;AutoContrast&quot;</i> enables/disables the <i>Edit&gt;Options&gt;Appearance</i>
+&quot;Auto contrast stacks&quot; option. You can also have newly displayed stack slices contrast
+enhanced by holding the shift key down when navigating stacks.">
+				<Param name="option" />
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setPasteMode" func="yes">
+			<Overload retVal="" descr="Sets the transfer mode used by the <i>Edit&gt;Paste</i> command, where <i>mode</i> is &quot;Copy&quot;, &quot;Blend&quot;, &quot;Average&quot;, &quot;Difference&quot;, 
+&quot;Transparent-white&quot;, &quot;Transparent-zero&quot;, &quot;AND&quot;, &quot;OR&quot;, &quot;XOR&quot;, &quot;Add&quot;, &quot;Subtract&quot;, &quot;Multiply&quot;, &quot;Divide, &quot;Min&quot; or &quot;Max&quot;.
+The <a href=&quot;../../macros/GetCurrentPasteMode.txt&quot;>GetCurrentPasteMode</a> macro demonstrates how
+to get the current paste mode. In ImageJ 1.42 and later, the paste mode is saved and restored by the
+<a href=&quot;#saveSettings&quot;>saveSettings</a> and <a href=&quot;#restoreSettings&quot;>restoreSettings</a>.">
+				<Param name="mode" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setPixel" func="yes">
+			<Overload retVal="" descr="Stores <i>value</i> at location (<i>x,y</i>) of the current image. The screen is
+updated when the macro exits or call updateDisplay() to have it updated immediately.">
+				<Param name="x" />
+				<Param name="y" />
+				<Param name="value" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setResult" func="yes">
+			<Overload retVal="" descr="Adds an entry to the ImageJ results table or modifies an existing entry. The first 
+argument specifies a column in the table. If the specified column does not exist, it is added.
+The second argument specifies the row, where 0&lt;=<i>row</i>&lt;=nResults.
+(<i>nResults</i> is a predefined variable.) A row is added to the table if <i>row</i>=<i>nResults</i>.
+The third argument is the value to be added or modified.
+With v1.47o or later, it can be a string.
+Call <i>setResult(&quot;Label&quot;, row, string)</i> to set the row label. 
+Call <i>updateResults()</i> to display the updated table in the &quot;Results&quot; window.
+For examples, see the
+<a href=&quot;../../macros/SineCosineTable.txt&quot;>SineCosineTable</a> and
+<a href=&quot;../../macros/ConvexitySolidarity.txt&quot;>ConvexitySolidarity</a> macros.">
+				<Param name="&quot;Column&quot;" />
+				<Param name="row" />
+				<Param name="value" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setRGBWeights" func="yes">
+			<Overload retVal="" descr="Sets the weighting factors used by the <i>Analyze&gt;Measure</i>, <i>Image&gt;Type&gt;8-bit</i> 
+and <i>Analyze&gt;Histogram</i> commands
+when they convert RGB pixels values to grayscale. The sum of the weights must be 1.0. Use
+
+<i>(1/3,1/3,1/3)</i> for equal weighting of red, green and blue.
+The weighting factors in effect when the macro started are restored when it terminates.
+For examples, see the
+<a href=&quot;../../macros/MeasureRGB.txt&quot;>MeasureRGB</a>,
+<a href=&quot;../../macros/ExtractRGBChannels.txt&quot;>ExtractRGBChannels</a> and
+<a href=&quot;../../macros/RGB_Histogram.txt&quot;>RGB_Histogram</a> macros.">
+				<Param name="redWeight" />
+				<Param name="greenWeight" />
+				<Param name="blueWeight" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setSelectionLocation" func="yes">
+			<Overload retVal="" descr="Moves the current selection to <i>(x,y)</i>, where <i>x</i> and <i>y</i> are the pixel coordinates of the
+upper left corner of the selection's bounding rectangle. The
+<a href=&quot;../../macros/RoiManagerMoveSelections.txt&quot;>RoiManagerMoveSelections</a>
+macro uses this function to move all the ROI Manager selections a specified distance.
+See also: <a href=&quot;#getSelectionBounds&quot;>getSelectionBounds</a>. ">
+				<Param name="x" />
+				<Param name="y" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setSelectionName" func="yes">
+			<Overload retVal="" descr="Sets the name of the current selection to the specified name.
+Aborts the macro if there is no selection.
+See also:
+<a href=&quot;#selectionName&quot;>selectionName</a> and
+<a href=&quot;#selectionType&quot;>selectionType</a>. ">
+				<Param name="name" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setSlice" func="yes">
+			<Overload retVal="" descr="Displays the <i>n</i>th slice of the active stack. Does nothing if the active image is not a stack.
+For an example, see the
+<a href=&quot;../../macros/MeasureStack.txt&quot;>MeasureStack</a>
+macros.
+See also: 
+<a href=&quot;#getSliceNumber&quot;>getSliceNumber</a>, 
+<a href=&quot;#nSlices&quot;>nSlices</a>.">
+				<Param name="n" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setThreshold" func="yes">
+			<Overload retVal="" descr="Sets the lower and upper threshold levels.
+There is an optional third argument that can be &quot;red&quot;,
+&quot;black & white&quot;, &quot;over/under&quot;, &quot;no color&quot; or &quot;raw&quot;.
+With density calibrated images, <i>lower</i> and <i>upper</i>
+must be calibrated values unless the optional third argument is &quot;raw&quot;.
+See also: 
+<a href=&quot;#setAutoThreshold&quot;>setAutoThreshold</a>, 
+<a href=&quot;#getThreshold&quot;>getThreshold</a>, 
+<a href=&quot;#resetThreshold&quot;>resetThreshold</a>.">
+				<Param name="lower" />
+				<Param name="upper" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setTool" func="yes">
+			<Overload retVal="" descr="Switches to the specified tool, where <i>name</i> is &quot;rectangle&quot;, &quot;roundrect&quot;, &quot;elliptical&quot;, &quot;brush&quot;, &quot;polygon&quot;, &quot;freehand&quot;,
+&quot;line&quot;, &quot;polyline&quot;, &quot;freeline&quot;, &quot;arrow&quot;, &quot;angle&quot;, &quot;point&quot;, &quot;multipoint&quot;, &quot;wand&quot;, &quot;text&quot;, &quot;zoom&quot;, &quot;hand&quot; or &quot;dropper&quot;.
+Refer to the
+<a href=&quot;../../macros/SetToolDemo.txt&quot;>SetToolDemo</a>, 
+<a href=&quot;../../macros/ToolShortcuts.txt&quot;>ToolShortcuts</a> or 
+<a href=&quot;../../macros/ToolSwitcher.txt&quot;>ToolSwitcher</a>, 
+macros for examples.
+See also: 
+<a href=&quot;#getToolName&quot;>IJ.getToolName</a>.">
+				<Param name="name" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setTool" func="yes">
+			<Overload retVal="" descr="Switches to the specified tool, where 0=rectangle, 1=oval, 2=polygon, 3=freehand,
+4=straight line, 5=polyline, 6=freeline, 7=point, 8=wand, 9=text, 10=unused,
+11=zoom, 12=hand, 13=dropper, 14=angle, 15...21=custom tools.
+See also: 
+<a href=&quot;#toolID&quot;>toolID</a>.">
+				<Param name="id" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setupUndo()" func="no">
+			<Overload retVal="" descr="Call this function before drawing on an image to allow the user the option of later restoring the original image
+using <i>Edit/Undo</i>. Note that setupUndo() may not work as intended
+with macros that call the run() function.
+For an example, see the
+<a href=&quot;../../macros/tools/DrawingTools.txt&quot;>DrawingTools</a>
+tool set.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setVoxelSize" func="yes">
+			<Overload retVal="" descr="Defines the voxel dimensions and unit of length (&quot;pixel&quot;, &quot;mm&quot;, etc.) for the current 
+image or stack. A &quot;um&quot; unit will be converted to &quot;&micro;m&quot;.
+The <i>depth</i> argument is ignored if the current image is not a stack.
+See also: <a href=&quot;#getVoxelSize&quot;>getVoxelSize</a>.">
+				<Param name="width" />
+				<Param name="height" />
+				<Param name="depth" />
+				<Param name="unit" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="setZCoordinate" func="yes">
+			<Overload retVal="" descr="Sets the Z coordinate used by <i>getPixel()</i>, <i>setPixel()</i> and <i>changeValues()</i>. The argument must 
+be in the range 0 to n-1, where n is the number of images in the stack. For an examples, see the
+<a href=&quot;../../macros/tools/ZProfileTool.txt&quot;>Z Profile Plotter Tool</a>. ">
+				<Param name="z" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="showMessage(&quot;message&quot;)" func="no">
+			<Overload retVal="" descr="Displays &quot;message&quot; in a dialog box. Can display HTML formatted
+text (<a href=&quot;../../macros/HtmlDialogDemo.txt&quot;>example</a>).">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="showMessage" func="yes">
+			<Overload retVal="" descr="Displays &quot;message&quot; in a dialog box using &quot;title&quot; as the
+the dialog box title.  Can display HTML formatted
+text (<a href=&quot;../../macros/HtmlDialogDemo.txt&quot;>example</a>).">
+				<Param name="&quot;title&quot;" />
+				<Param name="&quot;message&quot;" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="showMessageWithCancel" func="yes">
+			<Overload retVal="" descr="Displays &quot;message&quot; in a dialog box with &quot;OK&quot; and &quot;Cancel&quot; buttons.
+&quot;Title&quot; (optional) is the dialog box title. The macro exits if 
+the user clicks &quot;Cancel&quot; button.
+See also: <a href=&quot;#getBoolean&quot;>getBoolean</a>.">
+				<Param name="[&quot;title&quot;" />
+				<Param name="]&quot;message&quot;" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="showProgress" func="yes">
+			<Overload retVal="" descr="Updates the ImageJ progress bar, where 0.0<=<i>progress</i>&lt;=1.0. The progress bar is 
+not displayed if the time between the first and second calls to this function
+is less than 30 milliseconds. It is erased when the macro terminates 
+or <i>progress</i> is &gt;=1.0.
+Use negative values to show subordinate progress bars as moving dots
+(<a href=&quot;../../macros/examples/DualProgressDemo.txt&quot;>example</a>).">
+				<Param name="progress" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="showProgress" func="yes">
+			<Overload retVal="" descr="Updates the progress bar, where the length of the bar is set to
+<i>currentIndex</i>/<i>finalIndex</i> of the maximum bar length.
+The bar is erased if <i>currentIndex</i>&gt;<i>finalIndex</i> or
+<i>finalIndex</i>==0.">
+				<Param name="currentIndex" />
+				<Param name="finalIndex" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="showStatus(&quot;message&quot;)" func="no">
+			<Overload retVal="" descr="Displays a message in the ImageJ status bar.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="showText(&quot;string&quot;)" func="no">
+			<Overload retVal="" descr="Displays a string in a text window.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="showText" func="yes">
+			<Overload retVal="" descr="Displays a string in a text window using the specified title.">
+				<Param name="&quot;Title&quot;" />
+				<Param name="&quot;string&quot;" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="sin" func="yes">
+			<Overload retVal="" descr="Returns the sine of an angle (in radians).">
+				<Param name="angle" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="snapshot()" func="no">
+			<Overload retVal="" descr="Creates a backup copy of the current image that can be later restored using the
+<a href=&quot;#reset&quot;>reset</a> function.
+For examples, see the
+<a href=&quot;../../macros/ImageRotator.txt&quot;>ImageRotator</a> and
+
+<a href=&quot;../../macros/BouncingBar.txt&quot;>BouncingBar</a> macros.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="split" func="yes">
+			<Overload retVal="" descr="Breaks a string into an array of substrings. <i>Delimiters</i> is a string containing 
+one or more delimiter characters. The default delimiter set &quot; \t\n\r&quot; (space, tab, newline, return) 
+is used if <i>delimiters</i> is an empty string or split is called with only one argument. 
+Multiple delimiters in the <i>string</i> are merged (taken as one)
+and delimiters at the start or end of the <i>string</i> are ignored unless the delimiter
+is a single comma, a single semicolon or a regular expression.
+With ImageJ 1.49f or later, <i>delimiters</i> can be also a regular expression enclosed in
+parentheses, e.g. <i>delimiters</i>=&quot;(\n\n)&quot; splits only at empty lines (two newline characters
+following each other).">
+				<Param name="string" />
+				<Param name="delimiters" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="sqrt" func="yes">
+			<Overload retVal="" descr="Returns the square root of <i>n</i>. Returns NaN if <i>n</i> is less than zero.">
+				<Param name="n" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Returns true if the current image is a hyperstack.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Stack.getDimensions" func="yes">
+			<Overload retVal="" descr="Returns the dimensions of the current image.">
+				<Param name="width" />
+				<Param name="height" />
+				<Param name="channels" />
+				<Param name="slices" />
+				<Param name="frames" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Stack.setDimensions" func="yes">
+			<Overload retVal="" descr="Sets the 3rd, 4th and 5th dimensions of the current stack.">
+				<Param name="channels" />
+				<Param name="slices" />
+				<Param name="frames" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Stack.setChannel" func="yes">
+			<Overload retVal="" descr="Displays channel <i>n</i> .">
+				<Param name="n" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Stack.setSlice" func="yes">
+			<Overload retVal="" descr="Displays slice <i>n</i> .">
+				<Param name="n" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Stack.setFrame" func="yes">
+			<Overload retVal="" descr="Displays frame <i>n</i> .">
+				<Param name="n" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Stack.getPosition" func="yes">
+			<Overload retVal="" descr="Returns the current position.">
+				<Param name="channel" />
+				<Param name="slice" />
+				<Param name="frame" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Stack.setPosition" func="yes">
+			<Overload retVal="" descr="Sets the position.">
+				<Param name="channel" />
+				<Param name="slice" />
+				<Param name="frame" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Stack.getFrameRate()" func="no">
+			<Overload retVal="" descr="Returns the frame rate (FPS).">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Stack.setFrameRate" func="yes">
+			<Overload retVal="" descr="Sets the frame rate.">
+				<Param name="fps" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Stack.getFrameInterval()" func="no">
+			<Overload retVal="" descr="Returns the frame interval in time (T) units.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Stack.setFrameInterval" func="yes">
+			<Overload retVal="" descr="Sets the frame interval in time (T) units.">
+				<Param name="interval" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Stack.getUnits" func="yes">
+			<Overload retVal="" descr="Returns the x, y, z, time and value units.">
+				<Param name="X" />
+				<Param name="Y" />
+				<Param name="Z" />
+				<Param name="Time" />
+				<Param name="Value" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Stack.setTUnit" func="yes">
+			<Overload retVal="" descr="Sets the time unit.">
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Stack.setZUnit" func="yes">
+			<Overload retVal="" descr="Sets the Z-dimension unit.">
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Stack.setDisplayMode" func="yes">
+			<Overload retVal="" descr="Sets the display mode, where <i>mode</i> is &quot;composite&quot;, &quot;color&quot; or &quot;grayscale&quot;.
+Requires a multi-channel stack and v1.40a or later.">
+				<Param name="mode" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Stack.getDisplayMode" func="yes">
+			<Overload retVal="" descr="Sets the string <i>mode</i> to the current display mode.">
+				<Param name="mode" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Stack.setActiveChannels" func="yes">
+			<Overload retVal="" descr="Controls which channels in a composite color image are displayed, where <i>string</i>
+is a list of ones and zeros that specify the channels to display.
+For example, &quot;101&quot; causes channels 1 and 3 to be displayed.">
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Stack.getActiveChannels" func="yes">
+			<Overload retVal="" descr="Returns a string that represents the state of the channels
+in a composite color image, where '1' indicates a displayed
+channel and '0' indicates an inactive channel.">
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Stack.swap" func="yes">
+			<Overload retVal="" descr="Swaps the two specified stack images, where <i>n1</i> and <i>n2</i>
+are integers greater than 0 and less than or equal to <a href=&quot;#nSlices&quot;>nSlices</a>.">
+				<Param name="n1" />
+				<Param name="n2" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Stack.getStatistics" func="yes">
+			<Overload retVal="" descr="Calculates and returns stack statistics.">
+				<Param name="voxelCount" />
+				<Param name="mean" />
+				<Param name="min" />
+				<Param name="max" />
+				<Param name="stdDev" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Stack.setOrthoViews" func="yes">
+			<Overload retVal="" descr="If an <i>Orthogonal Views</i> is active, its crosspoint is set to x, y, z
+(<a href=&quot;../../macros/OrthogonalViewsDemo.txt&quot;>example</a>).">
+				<Param name="x" />
+				<Param name="y" />
+				<Param name="z" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Returns the image ID of the current <i>Orthogonal Views</i>, or zero if none is active.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Stops the current <i>Orthogonal Views</i> and closes the &quot;YZ&quot; and &quot;XZ&quot; windows.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="startsWith" func="yes">
+			<Overload retVal="" descr="Returns <i>true</i> (1) if <i>string</i> starts with <i>prefix</i>.
+See also: 
+<a href=&quot;#endsWith&quot;>endsWith</a>, 
+<a href=&quot;#indexOf&quot;>indexOf</a>,
+<a href=&quot;#substring&quot;>substring</a>, 
+<a href=&quot;#toLowerCase&quot;>toLowerCase</a>,
+<a href=&quot;#matches&quot;>matches</a>. ">
+				<Param name="string" />
+				<Param name="prefix" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Resets (clears) the buffer.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="String.append" func="yes">
+			<Overload retVal="" descr="Appends <i>str</i> to the buffer.">
+				<Param name="str" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Returns the contents of the buffer.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="String.copy" func="yes">
+			<Overload retVal="" descr="Copies <i>str</i> to the clipboard.">
+				<Param name="str" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Copies the Results table, or selected rows in the Results
+table (1.47i or later), to the clipboard.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Returns the Results window headers.
+<a href=&quot;../../macros/examples/PrintResults.txt&quot;>Example</a>.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Returns the contents of the clipboard.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="String.show" func="yes">
+			<Overload retVal="" descr="Displays <i>str</i> in a text window.">
+				<Param name="str" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="String.show" func="yes">
+			<Overload retVal="" descr="Displays <i>str</i> in a text window using <i>title</i> as the title.
+">
+				<Param name="title" />
+				<Param name="str" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="substring" func="yes">
+			<Overload retVal="" descr="Returns a new string that is a substring of <i>string</i>. The 
+substring begins at <i>index1</i> and extends to the character at <i>index2</i> - 1. 
+See also: 
+<a href=&quot;#indexOf&quot;>indexOf</a>,
+<a href=&quot;#startsWith&quot;>startsWith</a>,
+<a href=&quot;#endsWith&quot;>endsWith</a>,
+<a href=&quot;#replace&quot;>replace</a>.">
+				<Param name="string" />
+				<Param name="index1" />
+				<Param name="index2" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="substring" func="yes">
+			<Overload retVal="" descr="Returns a substring of <i>string</i> that
+begins at <i>index</i> and extends to the end of <i>string</i>. ">
+				<Param name="string" />
+				<Param name="index" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="
+<a name=Table></a>
+ <b>Table Functions</b><br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Table.create" func="yes">
+			<Overload retVal="" descr="Creates or resets a table. If the table exists, it is reset (cleared), otherwise a new table with the specified name is opened.">
+				<Param name="name" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Table.reset" func="yes">
+			<Overload retVal="" descr="Resets the specified table.">
+				<Param name="name" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="The number of rows in the current table.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="The title (name) of the current table.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="The column headings as a tab-delimited string.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Table.get" func="yes">
+			<Overload retVal="" descr="Returns the numeric value from the cell at the specified column and row.">
+				<Param name="columnName" />
+				<Param name="rowIndex" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Table.getString" func="yes">
+			<Overload retVal="" descr="Returns a string value from the cell at the specified column and row.">
+				<Param name="columnName" />
+				<Param name="rowIndex" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Table.set" func="yes">
+			<Overload retVal="" descr="Assigns a numeric or string value to the cell at the specified column and row.">
+				<Param name="columnName" />
+				<Param name="rowIndex" />
+				<Param name="value" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Table.getColumn" func="yes">
+			<Overload retVal="" descr="Returns the specified column as an array.">
+				<Param name="columnName" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Table.setColumn" func="yes">
+			<Overload retVal="" descr="Assigns an array to the specified column.">
+				<Param name="columnName" />
+				<Param name="array" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Table.renameColumn" func="yes">
+			<Overload retVal="" descr="Renames a column.">
+				<Param name="oldName" />
+				<Param name="newName" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Table.deleteColumn" func="yes">
+			<Overload retVal="" descr="Deletes the specified column.">
+				<Param name="columnName" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Updates the window displaying the current table.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Table.rename" func="yes">
+			<Overload retVal="" descr="Renames a table.">
+				<Param name="oldName" />
+				<Param name="newName" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Table.save" func="yes">
+			<Overload retVal="" descr="Saves a table.">
+				<Param name="filePath" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Table.open" func="yes">
+			<Overload retVal="" descr="Opens a table.">
+				<Param name="filePath" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Table.deleteRows" func="yes">
+			<Overload retVal="" descr="Deletes specified rows.">
+				<Param name="firstIndex" />
+				<Param name="lastIndex" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Table.showRowNumbers" func="yes">
+			<Overload retVal="" descr="Enable/disable row numbers. Default is 'false'.">
+				<Param name="boolean" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Table.showArrays" func="yes">
+			<Overload retVal="" descr="Displays arrays in a table (same as <a href=&quot;#Array.show&quot;>Array.show</a>).">
+				<Param name="titleAndOptions" />
+				<Param name="array1" />
+				<Param name="array2" />
+				<Param name="..." />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="Table.applyMacro" func="yes">
+			<Overload retVal="" descr="Applies macro code to each row of the table. Columns are assigned
+variable names as given by Table.headings. New variables starting with
+an uppercase letter create a new column with this name. The variable
+'row' (row index) is pre-defined. Currently only supports numeric values
+except for row labels.">
+				<Param name="code" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="tan" func="yes">
+			<Overload retVal="" descr="Returns the tangent of an angle (in radians).">
+				<Param name="angle" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="toBinary" func="yes">
+			<Overload retVal="" descr="
+Returns a binary string representation of <i>number</i>.">
+				<Param name="number" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="toHex" func="yes">
+			<Overload retVal="" descr="Returns a hexadecimal string representation of <i>number</i>.">
+				<Param name="number" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="toLowerCase" func="yes">
+			<Overload retVal="" descr="Returns a new string that is a copy of <i>string</i> with all the characters converted to lower case.">
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="Returns the ID of the currently selected tool.
+See also: <a href=&quot;#setTool&quot;>setTool</a>,
+<a href=&quot;#getToolName&quot;>IJ.getToolName</a>. ">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="toScaled" func="yes">
+			<Overload retVal="" descr="Converts unscaled pixel coordinates to scaled coordinates using
+the properties of the current image or plot. Also accepts arrays.">
+				<Param name="x" />
+				<Param name="y" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="toScaled" func="yes">
+			<Overload retVal="" descr="Converts unscaled (x,y,z) pixel coordinates to scaled coordinates.">
+				<Param name="x" />
+				<Param name="y" />
+				<Param name="z" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="toUnscaled" func="yes">
+			<Overload retVal="" descr="Converts scaled coordinates to unscaled pixel coordinates using
+the properties of the current image or plot. Also accepts arrays.
+Refer to the
+<a href=&quot;../../macros/examples/AdvancedPlots.txt&quot;>AdvancedPlots</a>
+macro set for examples.">
+				<Param name="x" />
+				<Param name="y" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="toUnscaled" func="yes">
+			<Overload retVal="" descr="Converts scaled (x,y,z) pixel coordinates to unscaled (raw) coordinates.">
+				<Param name="x" />
+				<Param name="y" />
+				<Param name="z" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="toScaled" func="yes">
+			<Overload retVal="" descr="Converts (in place) a length in pixels to a scaled length using
+the properties of the current image.">
+				<Param name="length" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="toUnscaled" func="yes">
+			<Overload retVal="" descr="Converts (in place) a scaled length to a length in pixels using
+the properties of the current image.">
+				<Param name="length" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="toString" func="yes">
+			<Overload retVal="" descr="Returns a decimal string representation of <i>number</i>.
+See also: 
+<a href=&quot;#toBinary&quot;>toBinary</a>,
+<a href=&quot;#toHex&quot;>toHex</a>,
+<a href=&quot;#parseFloat&quot;>parseFloat</a> and
+<a href=&quot;#parseInt&quot;>parseInt</a>.">
+				<Param name="number" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="toString" func="yes">
+			<Overload retVal="" descr="Converts <i>number</i> into a string, 
+using the specified number of decimal places.">
+				<Param name="number" />
+				<Param name="decimalPlaces" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="toUpperCase" func="yes">
+			<Overload retVal="" descr="Returns a new string that is a copy of <i>string</i> with all the characters converted to upper case.">
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="<a name=updateDisplay></a>
+<b>updateDisplay()</b><br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="updateDisplay()" func="no">
+			<Overload retVal="" descr="Redraws the active image.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="updateResults()" func="no">
+			<Overload retVal="" descr="Call this function to update the &quot;Results&quot; window after the results table has been 
+modified by calls to the setResult() function.">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="<a name=wait></a>
+<b>wait(n)</b><br>">
+			</Overload>
+		</KeyWord>
+		<KeyWord name="wait" func="yes">
+			<Overload retVal="" descr="Delays (sleeps) for <i>n</i> milliseconds.">
+				<Param name="n" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="waitForUser" func="yes">
+			<Overload retVal="" descr="Halts the macro and displays <i>string</i> in a dialog box. The macro proceeds when the 
+user clicks &quot;OK&quot;.
+Unlike <a href=&quot;#showMessage&quot;>showMessage</a>, the dialog box is not modal,
+so the user can, for example,
+create a selection or adjust the threshold while the dialog is open.
+To display a multi-line
+message, add newline characters (&quot;\n&quot;) to <i>string</i>. 
+This function is based on 
+Michael Schmid's
+<a href=&quot;http://imagejdocu.tudor.lu/imagej-documentation-wiki/plugins/wait_for_user&quot;>Wait_For_User</a> plugin.
+Example:
+<a href=&quot;../../macros/WaitForUserDemo.txt&quot;>WaitForUserDemo</a>.">
+				<Param name="string" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="waitForUser" func="yes">
+			<Overload retVal="" descr="This is a two argument version of <i>waitForUser</i>, where <i>title</i> is the dialog box title
+and <i>message</i> is the text dispayed in the dialog.">
+				<Param name="title" />
+				<Param name="message" />
+			</Overload>
+		</KeyWord>
+		<KeyWord name="" func="no">
+			<Overload retVal="" descr="This is a no argument version of <i>waitForUser</i> that displays &quot;Click OK to continue&quot;
+in the dialog box.">
+			</Overload>
+		</KeyWord>
+	</AutoComplete>
+</NotepadPlus>
