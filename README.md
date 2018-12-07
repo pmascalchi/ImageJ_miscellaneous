@@ -1,4 +1,7 @@
 # ImageJ_miscellaneous
+
+> **Important:** to get the files, you can click in the list and then right click on "RAW" (top-right button above text) and select "Save link as...".
+
 Various tools for ImageJ / Fiji:
 - Fiji macro **syntax highlighting** for Notepad-plusplus (.xml file). To be uploaded through "Language > User-defined language > import").
 To run the macro code in ImageJ/Fiji from notepad++, click on "Run" (or "Execute") in the menu and write the following full path (replace only the part between <>):
