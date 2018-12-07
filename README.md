@@ -3,7 +3,7 @@ Various tools for ImageJ / Fiji:
 - Fiji macro **syntax highlighting** for Notepad-plusplus (.xml file). To be uploaded through "Language > User-defined language > import").
 To run the macro code in ImageJ/Fiji from notepad++, click on "Run" (or "Execute") in the menu and write the following full path (replace only the part between <>):
 
-    <YourPathToImageJOrFiji...exe> -macro "$(FULL_CURRENT_PATH)"
+       <YourPathToImageJOrFiji...exe> -macro "$(FULL_CURRENT_PATH)"
 
     You have an option to save that run command and associate a shortcut to it (e.g. Alt + R).
 
