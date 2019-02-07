@@ -1,6 +1,6 @@
 # ImageJ_miscellaneous
 
-> **Important:** to get the files, you can click on their names in the list above and then right click on "RAW" (top-right button above text), and select "Save link as...".
+> **Important:** to get the files, you can click on their names in the list above, then right click on "RAW" (top-right button above text) and select "Save link as...".
 
 Various tools for ImageJ / Fiji:
 - Fiji macro **syntax highlighting** for Notepad-plusplus (.xml file). To be uploaded through "Language > User-defined language > import").
