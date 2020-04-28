@@ -4,7 +4,7 @@
 
 Various tools for ImageJ / Fiji:
 
-- **Useful Fiji toolbar v1.7**: This Fiji toolbar will give you a faster access to useful and classic functions, e.g. 
+- **Useful Fiji toolbar v1.7 = StartupMacros.fiji.ijm**: This Fiji toolbar will give you a faster access to useful and classic functions, e.g. 
   - open a complex file = Bio-Formats importer, 
   - save as tiff, save as jpeg, 
   - channel overlay display (i.e. composite mode), 
@@ -16,7 +16,7 @@ Associated content:
   1. the Fiji macro file to replace the original "StartupMacros.fiji.ijm" in the subfolder "/macros", 
   2. a quick guide about the buttons of the toolbar.<br/>
 """  
-Installation note: rename the original "StartupMacros.fiji.ijm" file to create a back-up, in case you're not happy with the new toolbar. Note for mac users: to access the macros subfolder, go to "Applications", right-click or ctrl-click on the Fiji icon and select "show package content". Then you will be able to copy/paste the new "StartupMacros.fiji.ijm" file.<br/>
+Installation note: *rename the original* "StartupMacros.fiji.ijm" file to create a *back-up*, in case you're not happy with the new toolbar. Note for mac users: to access the macros subfolder, go to "Applications", right-click or ctrl-click on the Fiji icon and select "show package content". Then you will be able to copy/paste the new "StartupMacros.fiji.ijm" file.<br/>
 Tested with FijiImageJ v1.47/v1.48    
 
 - **3D-image_time-interpolator.ijm** is a macro that generates intermediate 3D images between two initial 3D images. Interpolation is linear for each pixel. This was created for visual creation purpose only. To use it, open your two 3D images in ImageJ and run the macro... Sample zip contains demo images as maximum projections (for faster overview), but were processed as 3D. You can do it yourself as these images were extracted from the sample library of ImageJ (mitosis 5D).
