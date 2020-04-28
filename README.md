@@ -16,3 +16,6 @@ Please pay attention that this dictionary has been generated from the webpage ht
 Result is not perfect but helps. Auto-completion as a Fiji plugin exists as well...
 
 - **3D-image_time-interpolator.ijm** is a macro that generates intermediate 3D images between two initial 3D images. Interpolation is linear for each pixel. This was created for visual creation purpose only. To use it, open your two 3D images in ImageJ and run the macro... Sample zip contains demo images as maximum projections (for faster overview), but were processed as 3D. You can do it yourself as these images were extracted from the sample library of ImageJ (mitosis 5D).
+
+- ** Icon generator for ImageJ menu (Excel macro)** 
+Use Excel to easily create a simple icon for the menu bar in ImageJ. This excel macro will allow you to draw manually a colored 16x16 pixels "icon" image and then get the corresponding ImageJ code (to be used for instance in "Startup Macros" file). You will have further guidelines within the excel file. Restriction: Your Excel version should accept the .XLSM format.
