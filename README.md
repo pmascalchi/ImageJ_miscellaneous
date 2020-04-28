@@ -9,13 +9,13 @@ Various tools for ImageJ / Fiji:
   - save as tiff, save as jpeg, 
   - channel overlay display (i.e. composite mode), 
   - quick scale bar, etc.<br/>
-- - -  
+///  
 Please note that some of the functions included in the file are original and won't be found through Fiji menu. If you don't like any of the buttons I chose, you can contact me and suggest another function instead...  
-- - -  
+///  
 Associated content:
   - the Fiji macro file to replace the original "StartupMacros.fiji.ijm" in the subfolder "/macros", 
   - a quick guide for the buttons of the toolbar.<br/>
-- - -  
+///  
 Installation note: rename the original "StartupMacros.fiji.ijm" file to create a back-up, in case you're not happy with the new toolbar. Note for mac users: to access the macros subfolder, go to "Applications", right-click or ctrl-click on the Fiji icon and select "show package content". Then you will be able to copy/paste the new "StartupMacros.fiji.ijm" file.<br/>
 Tested with FijiImageJ v1.47/v1.48    
 
